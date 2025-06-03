@@ -1,0 +1,10 @@
+pyproject.toml
+src/zagent0/__init__.py
+src/zagent0/register.py
+src/zagent0/zagent0_function.py
+src/zagent0.egg-info/PKG-INFO
+src/zagent0.egg-info/SOURCES.txt
+src/zagent0.egg-info/dependency_links.txt
+src/zagent0.egg-info/entry_points.txt
+src/zagent0.egg-info/requires.txt
+src/zagent0.egg-info/top_level.txt

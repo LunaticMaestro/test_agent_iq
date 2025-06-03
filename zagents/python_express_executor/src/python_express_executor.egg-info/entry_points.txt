@@ -1,0 +1,2 @@
+[aiq.components]
+python_express_executor = python_express_executor.register

@@ -1,0 +1,34 @@
+general:
+  use_uvloop: true
+  logging:
+    console:
+      _type: console
+      level: DEBUG
+
+  front_end:
+    _type: fastapi
+
+  front_end:
+    _type: console
+
+  telemetry:
+    tracing:
+      phoenix:
+        _type: phoenix
+        endpoint: http://localhost:6006/v1/traces
+        project: experiment1
+
+llms:
+  nim_llm:
+    _type: nim
+    model_name : meta/llama-3.1-405b-instruct
+    temperature: 0.0 
+    max_tokens: 10000
+
+workflow:
+  _type: z1structuredToolPandas
+  llm: nim_llm
+  csv_file: "/workspaces/do_aiq2/_data/retail_customer/Retail_Customer_Cluster_Data.xlsx"
+  csv_metafile: "/workspaces/do_aiq2/_data/retail_customer/meta.md"
+  description: "Use this tool to get data related to Customer Retails."
+  

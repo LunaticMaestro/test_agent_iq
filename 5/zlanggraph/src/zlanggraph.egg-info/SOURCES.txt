@@ -1,0 +1,11 @@
+pyproject.toml
+src/zlanggraph/__init__.py
+src/zlanggraph/register.py
+src/zlanggraph/research.py
+src/zlanggraph/zlanggraph_function.py
+src/zlanggraph.egg-info/PKG-INFO
+src/zlanggraph.egg-info/SOURCES.txt
+src/zlanggraph.egg-info/dependency_links.txt
+src/zlanggraph.egg-info/entry_points.txt
+src/zlanggraph.egg-info/requires.txt
+src/zlanggraph.egg-info/top_level.txt

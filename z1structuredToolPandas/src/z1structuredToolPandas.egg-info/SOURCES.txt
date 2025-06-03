@@ -1,0 +1,11 @@
+pyproject.toml
+src/z1structuredToolPandas/__init__.py
+src/z1structuredToolPandas/prompts.py
+src/z1structuredToolPandas/register.py
+src/z1structuredToolPandas/z1structuredToolPandas_function.py
+src/z1structuredToolPandas.egg-info/PKG-INFO
+src/z1structuredToolPandas.egg-info/SOURCES.txt
+src/z1structuredToolPandas.egg-info/dependency_links.txt
+src/z1structuredToolPandas.egg-info/entry_points.txt
+src/z1structuredToolPandas.egg-info/requires.txt
+src/z1structuredToolPandas.egg-info/top_level.txt

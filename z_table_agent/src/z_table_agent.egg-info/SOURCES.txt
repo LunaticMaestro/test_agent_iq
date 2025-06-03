@@ -1,0 +1,10 @@
+pyproject.toml
+src/z_table_agent/__init__.py
+src/z_table_agent/register.py
+src/z_table_agent/z_table_agent_function.py
+src/z_table_agent.egg-info/PKG-INFO
+src/z_table_agent.egg-info/SOURCES.txt
+src/z_table_agent.egg-info/dependency_links.txt
+src/z_table_agent.egg-info/entry_points.txt
+src/z_table_agent.egg-info/requires.txt
+src/z_table_agent.egg-info/top_level.txt

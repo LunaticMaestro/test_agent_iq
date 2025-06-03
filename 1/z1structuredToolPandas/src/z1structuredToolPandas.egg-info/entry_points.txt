@@ -1,0 +1,2 @@
+[aiq.components]
+z1structuredToolPandas = z1structuredToolPandas.register

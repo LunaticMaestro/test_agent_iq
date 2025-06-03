@@ -1,0 +1,14 @@
+# Plan For questions:
+- what should be plan for young generation customer?
+- Which customer segments have shown the highest growth potential over the last quarter?
+- How does purchasing behavior vary across different demographic or psychographic segments?
+- What pain points are most commonly reported by high-value customers?
+- Based on current trends, what is our projected revenue for the next two quarters?
+
+
+## Plan 
+
+- Ask the tool what kind of information they can provide. Specifically names of the coloums if any
+- Create a plan from the list questions from the available data to answer the query
+- Each question must be yield some statistical measure
+- Collate answers from the questions and respond to the end user.

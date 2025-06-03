@@ -1,0 +1,13 @@
+# Plan For questions:
+
+- What new products or services have our top three competitors launched in the past 6 months?
+- How are competitors positioning themselves differently in terms of price, quality, or service?
+- How sensitive is our sales forecast to potential changes in market conditions or competitor actions?
+
+## Plan 
+
+1. Use a tool to news or latest update on the competitor 
+2. Now use the tool to find what kind of information it can provide about our customer data, specifically column names 
+3. now prepare a question based on '1.' and '2.' that our tool answer about our customer demographics if we wish offer what our competitors are offering 
+4. Now use the tools to retrieve answer to each of the question prepared in '3.'
+5. Collate the answers and respond to the end user.

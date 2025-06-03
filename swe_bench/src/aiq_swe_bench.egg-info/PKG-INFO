@@ -1,0 +1,8 @@
+Metadata-Version: 2.4
+Name: aiq_swe_bench
+Version: 0.1.dev132+g08217e5
+Summary: Example for solving SWE bench problems
+Classifier: Programming Language :: Python
+Requires-Python: <3.13,>=3.11
+Requires-Dist: aiqtoolkit[langchain]~=1.1
+Requires-Dist: swebench==3.0.3

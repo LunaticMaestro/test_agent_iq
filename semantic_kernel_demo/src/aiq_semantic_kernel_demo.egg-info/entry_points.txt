@@ -1,0 +1,2 @@
+[aiq.components]
+aiq_semantic_kernel_demo = aiq_semantic_kernel_demo.register

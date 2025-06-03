@@ -1,0 +1,45 @@
+general:
+  use_uvloop: true
+  logging:
+    console:
+      _type: console
+      level: DEBUG
+
+  front_end:
+    _type: fastapi
+
+  front_end:
+    _type: console
+
+  telemetry:
+    tracing:
+      phoenix:
+        _type: phoenix
+        endpoint: http://localhost:6006/v1/traces
+        project: Experiment3
+
+llms:
+  nim_llm:
+    _type: nim
+    temperature: 0.0 
+    # model_name : meta/llama-3.1-405b-instruct
+    # model_name: microsoft/phi-4-mini-instruct
+    model_name: nvidia/llama-3.3-nemotron-super-49b-v1
+    # model_name: meta/llama-3.3-70b-instruct
+
+functions:
+  table_agent: 
+    _type: z1structuredToolPandas # no change from previous
+    llm: nim_llm
+    csv_file: "/workspaces/do_aiq2/_data/retail_customer/Retail_Customer_Cluster_Data.xlsx"
+    csv_metafile: "/workspaces/do_aiq2/_data/retail_customer/meta.md"
+    description: "Use this tool to get data related to Customer Retails."
+  
+workflow: 
+  _type: react_agent
+  tool_names: [table_agent]
+  llm_name: nim_llm 
+  verbose: true 
+  handle_parsing_errors: false 
+  max_retries: 0
+

@@ -1,0 +1,81 @@
+general:
+  use_uvloop: true
+  logging:
+    console:
+      _type: console
+      level: WARN
+
+  front_end:
+    _type: fastapi
+
+  front_end:
+    _type: console
+
+functions: 
+  za: 
+    _type: zfoo
+    description: "Help you get information on customers"
+  
+  zb:
+    _type: zfoo 
+    description: "Help you get information on sales"
+
+  zc: 
+    _type: pandas_expression_generator
+    description: "Describes certain aspects of retail customers data."
+    llm: nim_llm
+    csv_file: /workspaces/do_aiq2/_data/retail_customer/Retail_Customer_Cluster_Data.xlsx
+    csv_metafile: /workspaces/do_aiq2/_data/retail_customer/meta.md
+
+llms:
+  nim_llm:
+    _type: nim 
+    model_name : meta/llama-3.1-405b-instruct
+    # model_name: microsoft/phi-4-mini-instruct
+    # model_name: nvidia/llama-3.3-nemotron-super-49b-v1
+    # model_name: meta/llama-3.3-70b-instruct
+    temperature: 0.0
+
+workflow:
+  _type: react_agent 
+  tool_names: 
+    - zc
+  llm_name: nim_llm
+  verbose: true
+  handle_parsing_errors: false
+  max_retries: 1
+  system_prompt: |
+    You are a helpful agent. You must use the tools to respond to the end users. 
+    The tools you are provided with are also smart. You can not only share what action to provide to the tools 
+    but also share what the user's query is, so that even the tools can contribute to your thought.
+
+     You may communicate and collaborate with various experts to answer the questions:
+
+    {tools}
+
+    You may respond in one of three formats.
+    Use the following format exactly to communicate with an expert:
+
+    Question: the input question you must answer
+    Thought: you should always think about what to do
+    Action: the action to take, should be one of [{tool_names}]
+    Action Input: the input to the action. You must start action Input such as "The user wants to know .[Question as-is].. .Hence, it is great to know [What you want to know]"
+    Observation: wait for the expert to respond, do not assume the expert's response
+
+    ... (this Thought/Action/Action Input/Observation can repeat N times.)
+    ... You wont get different output from same tool if you dont ask different question.
+    
+    Use the following format just before the final answer final answer:
+   
+    Thought:  Pre-final Answer: The answer that you have prepared; You should think of any missing facts and figure in the answer. Take help of the `action` to complete this.
+    Action: the action to take, should be one of [{tool_names}]
+    Action Input: ...
+    Observation: wait for the expert to respond, do not assume the expert's response
+    ... (this Thought/Action/Action Input/Observation can repeat N times.)
+    
+    ---
+    Use the following format once you have the final answer:
+    Thought: I now know the final answer
+    Final Answer: the final answer to the original input question. Write this answer in markown. Make it more descriptive, include numbers wherever on which original your response is based on. Behave like a conversation agent.
+
+  

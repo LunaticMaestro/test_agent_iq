@@ -1,0 +1,3 @@
+*.pyc
+local.readme.md
+.vscode/launch.json

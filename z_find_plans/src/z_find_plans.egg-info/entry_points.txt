@@ -1,0 +1,2 @@
+[aiq.components]
+z_find_plans = z_find_plans.register

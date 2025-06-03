@@ -1,0 +1,166 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Hopeful",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "/usr/local/bin/aiq", // entry point when installed as package
+            "args": [
+                "serve",
+                // "--config_file=/workspaces/do_aiq2/simple/src/aiq_simple/configs/config.yml"
+                // "--config_file=/workspaces/do_aiq2/simple_calculator/src/aiq_simple_calculator/configs/config.yml"
+                // "--config_file=/workspaces/do_aiq2/semantic_kernel_demo/src/aiq_semantic_kernel_demo/configs/config.yml"
+                // "--config_file=/workspaces/do_aiq2/zagents/python_express_executor/src/python_express_executor/configs/config.yml"
+                // "--config_file=/workspaces/do_aiq2/zagents/pandas_expression_generator/configs/config.yml"
+                "--config_file=/workspaces/do_aiq2/zagents/report_generator_0/configs/config.yml"
+            ],
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "env": {
+                "NVIDIA_API_KEY": "nv"
+            }
+        },
+        {
+            "name": "v0.1",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "/usr/local/bin/aiq", // entry point when installed as package
+            "args": [
+                "serve",
+                "--config_file=/workspaces/do_aiq2/zagents/report_generator_0/configs/config.yml"
+            ],
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "env": {
+                "NVIDIA_API_KEY": "nv"
+            }
+        },
+        {
+            "name": "v2.0",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "/usr/local/bin/aiq", // entry point when installed as package
+            "args": [
+                "serve",
+                "--config_file=/workspaces/do_aiq2/zlanggraph/configs/config.yml",
+                // "--config_file=/workspaces/do_aiq2/z_table_agent/src/z_table_agent/configs/config.yml"
+                // "--config_file=/workspaces/do_aiq2/zfoo/configs/config.yml"
+                // "--config_file=/workspaces/do_aiq2/z1config.yaml"
+            ],
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "env": {
+                "NVIDIA_API_KEY": "nv"
+            }
+        },
+        {
+            "name": "vlanggraph",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "env": {
+                "NVIDIA_API_KEY": "nv"
+            }
+        },
+        {
+            "name": "1",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "/usr/local/bin/aiq", // entry point when installed as package
+            "args": [
+                "serve",
+                "--config_file=/workspaces/do_aiq2/1/config.yaml",
+            ],
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "env": {
+                "NVIDIA_API_KEY": "nv"
+            }
+        },
+        {
+            "name": "2",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "/usr/local/bin/aiq", // entry point when installed as package
+            "args": [
+                "serve",
+                "--config_file=/workspaces/do_aiq2/2/config.yaml",
+            ],
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "env": {
+                "NVIDIA_API_KEY": "nv"
+            }
+        },
+        {
+            "name": "3",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "/usr/local/bin/aiq", // entry point when installed as package
+            "args": [
+                "serve",
+                "--config_file=/workspaces/do_aiq2/3/config.yaml",
+            ],
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "env": {
+                "NVIDIA_API_KEY": "nv"
+            }
+        },
+        {
+            "name": "4",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "/usr/local/bin/aiq", // entry point when installed as package
+            "args": [
+                "serve",
+                "--config_file=/workspaces/do_aiq2/4/config_a.yaml",
+                // "--config_file=/workspaces/do_aiq2/4/config_b.yaml",
+            ],
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "env": {
+                "NVIDIA_API_KEY": "nv"
+            }
+        },
+        {
+            "name": "5",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "/usr/local/bin/aiq", // entry point when installed as package
+            "args": [
+                "serve",
+                "--config_file=/workspaces/do_aiq2/5/config.yaml",
+                // "--config_file=/workspaces/do_aiq2/4/config_b.yaml",
+            ],
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "env": {
+                "NVIDIA_API_KEY": "nv"
+            }
+        },
+        {
+            "name": "6",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "/usr/local/bin/aiq", // entry point when installed as package
+            "args": [
+                "serve",
+                "--config_file=/workspaces/do_aiq2/6/config.yaml",
+                // "--config_file=/workspaces/do_aiq2/4/config_b.yaml",
+            ],
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "env": {
+                "NVIDIA_API_KEY": "nv"
+            }
+        }
+        
+    ]
+}

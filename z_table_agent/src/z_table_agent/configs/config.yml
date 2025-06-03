@@ -1,0 +1,30 @@
+general:
+  use_uvloop: true
+  logging:
+    console:
+      _type: console
+      level: WARN
+
+  front_end:
+    _type: fastapi
+
+  front_end:
+    _type: console
+
+llms:
+  nim_llm:
+    _type: nim
+    model_name : meta/llama-3.1-405b-instruct
+    temperature: 0.0
+
+functions: 
+  z_mem:
+    _type: z_mem
+
+workflow:
+  _type: z_table_agent
+  llm: nim_llm
+  csv_file: "/workspaces/do_aiq2/_data/retail_customer/Retail_Customer_Cluster_Data.xlsx"
+  csv_metafile: "/workspaces/do_aiq2/_data/retail_customer/meta.md"
+  description: "Use this agent to handles retail customers data"
+  is_chat_agent: true

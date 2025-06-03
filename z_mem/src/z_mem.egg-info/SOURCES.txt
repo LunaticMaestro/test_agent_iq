@@ -1,0 +1,10 @@
+pyproject.toml
+src/z_mem/__init__.py
+src/z_mem/register.py
+src/z_mem/z_mem_function.py
+src/z_mem.egg-info/PKG-INFO
+src/z_mem.egg-info/SOURCES.txt
+src/z_mem.egg-info/dependency_links.txt
+src/z_mem.egg-info/entry_points.txt
+src/z_mem.egg-info/requires.txt
+src/z_mem.egg-info/top_level.txt

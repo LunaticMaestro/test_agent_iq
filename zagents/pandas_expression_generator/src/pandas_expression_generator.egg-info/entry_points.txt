@@ -1,0 +1,2 @@
+[aiq.components]
+pandas_expression_generator = pandas_expression_generator.register

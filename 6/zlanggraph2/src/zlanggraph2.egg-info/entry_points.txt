@@ -1,0 +1,2 @@
+[aiq.components]
+zlanggraph2 = zlanggraph2.register

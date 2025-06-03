@@ -1,0 +1,23 @@
+general:
+  use_uvloop: true
+  logging:
+    console:
+      _type: console
+      level: WARN
+
+  front_end:
+    _type: fastapi
+
+  front_end:
+    _type: console
+  
+  telemetry:
+    tracing:
+      phoenix:
+        _type: phoenix
+        endpoint: http://localhost:6006/v1/traces
+        project: 1
+
+workflow:
+  _type: z1structuredToolPandas
+  parameter: default_value

@@ -1,0 +1,10 @@
+pyproject.toml
+src/zfoo/__init__.py
+src/zfoo/register.py
+src/zfoo/zfoo_function.py
+src/zfoo.egg-info/PKG-INFO
+src/zfoo.egg-info/SOURCES.txt
+src/zfoo.egg-info/dependency_links.txt
+src/zfoo.egg-info/entry_points.txt
+src/zfoo.egg-info/requires.txt
+src/zfoo.egg-info/top_level.txt

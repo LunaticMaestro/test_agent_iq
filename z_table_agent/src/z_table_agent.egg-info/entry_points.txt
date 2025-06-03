@@ -1,0 +1,2 @@
+[aiq.components]
+z_table_agent = z_table_agent.register

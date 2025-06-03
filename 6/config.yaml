@@ -1,0 +1,37 @@
+general:
+  use_uvloop: true
+  logging:
+    console:
+      _type: console
+      level: DEBUG
+
+  front_end:
+    _type: fastapi
+
+  front_end:
+    _type: console
+
+  telemetry:
+    tracing:
+      phoenix:
+        _type: phoenix
+        endpoint: http://localhost:6006/v1/traces
+        project: Experiment4
+
+llms:
+  nim_llm:
+    _type: nim
+    temperature: 0.0 
+    model_name : meta/llama-3.1-405b-instruct
+
+
+functions: 
+  joke: 
+    _type: zjoke 
+    description: "Use this tool to tell jokes"
+
+workflow:
+  _type: zlanggraph2
+  llm: nim_llm
+  tool_names: 
+    - joke

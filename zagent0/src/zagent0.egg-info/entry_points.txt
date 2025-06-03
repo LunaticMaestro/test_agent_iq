@@ -1,0 +1,2 @@
+[aiq.components]
+zagent0 = zagent0.register

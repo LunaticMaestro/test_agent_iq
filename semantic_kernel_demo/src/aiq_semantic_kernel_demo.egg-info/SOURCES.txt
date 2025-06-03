@@ -1,0 +1,16 @@
+README.md
+configs
+pyproject.toml
+data/hotel_prices.json
+src/aiq_semantic_kernel_demo/__init__.py
+src/aiq_semantic_kernel_demo/hotel_price_tool.py
+src/aiq_semantic_kernel_demo/local_events_tool.py
+src/aiq_semantic_kernel_demo/register.py
+src/aiq_semantic_kernel_demo.egg-info/PKG-INFO
+src/aiq_semantic_kernel_demo.egg-info/SOURCES.txt
+src/aiq_semantic_kernel_demo.egg-info/dependency_links.txt
+src/aiq_semantic_kernel_demo.egg-info/entry_points.txt
+src/aiq_semantic_kernel_demo.egg-info/requires.txt
+src/aiq_semantic_kernel_demo.egg-info/top_level.txt
+src/aiq_semantic_kernel_demo/configs/config.yml
+tests/test_semantic_kernel_workflow.py

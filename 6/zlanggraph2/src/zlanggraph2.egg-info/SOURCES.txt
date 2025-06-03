@@ -1,0 +1,10 @@
+pyproject.toml
+src/zlanggraph2/__init__.py
+src/zlanggraph2/register.py
+src/zlanggraph2/zlanggraph2_function.py
+src/zlanggraph2.egg-info/PKG-INFO
+src/zlanggraph2.egg-info/SOURCES.txt
+src/zlanggraph2.egg-info/dependency_links.txt
+src/zlanggraph2.egg-info/entry_points.txt
+src/zlanggraph2.egg-info/requires.txt
+src/zlanggraph2.egg-info/top_level.txt

@@ -1,0 +1,1737 @@
+[
+  {
+    "id": 1,
+    "question": "What are the main features of LangSmith?",
+    "answer": "LangSmith offers three main features: Observability for monitoring and analyzing traces, Evals for evaluating application performance and getting human feedback, and Prompt Engineering for iterating on prompts with version control and collaboration features.",
+    "generated_answer": "The main features of LangSmith are not mentioned in the provided text. The text appears to be describing the features of DOCA GPUNetIO, which include GPUDirect Async Kernel-Initiated Network (GDAKIN) communications, GPUDirect RDMA, smart memory allocation, Ethernet protocol management on GPU, and semaphores.",
+    "intermediate_steps": [
+      {
+        "function_ancestry": {
+          "function_id": "425563ca-ae71-4f32-bb4e-92ce7e725d46",
+          "function_name": "react_agent",
+          "parent_id": "bc7a00a4-e502-4ad0-8980-216293a2c893",
+          "parent_name": "root"
+        },
+        "payload": {
+          "event_type": "LLM_END",
+          "event_timestamp": 1747566907.0441725,
+          "span_event_timestamp": 1747566904.1415997,
+          "framework": "langchain",
+          "name": "meta/llama-3.1-70b-instruct",
+          "tags": null,
+          "metadata": {
+            "chat_responses": [
+              {
+                "text": "Thought: I need to find information about LangSmith to answer this question.\nAction: doca_documents\nAction Input: {\"query\": \"LangSmith features\"}\n",
+                "generation_info": null,
+                "type": "ChatGenerationChunk",
+                "message": {
+                  "content": "Thought: I need to find information about LangSmith to answer this question.\nAction: doca_documents\nAction Input: {\"query\": \"LangSmith features\"}\n",
+                  "additional_kwargs": {},
+                  "response_metadata": {
+                    "finish_reason": "stop",
+                    "model_name": "meta/llama-3.1-70b-instruct"
+                  },
+                  "type": "AIMessageChunk",
+                  "name": null,
+                  "id": "run--bc7a00a4-e502-4ad0-8980-216293a2c893"
+                }
+              }
+            ],
+            "chat_inputs": null,
+            "tool_inputs": null,
+            "tool_outputs": null,
+            "tool_info": null,
+            "span_inputs": null,
+            "span_outputs": null,
+            "provided_metadata": null
+          },
+          "data": {
+            "input": "\nQuestion: What are the main features of LangSmith?\n",
+            "output": "Thought: I need to find information about LangSmith to answer this question.\nAction: doca_documents\nAction Input: {\"query\": \"LangSmith features\"}\n",
+            "chunk": null
+          },
+          "usage_info": {
+            "token_usage": {
+              "prompt_tokens": 12600,
+              "completion_tokens": 630,
+              "total_tokens": 13230
+            },
+            "num_llm_calls": 0,
+            "seconds_between_calls": 0
+          },
+          "UUID": "bc7a00a4-e502-4ad0-8980-216293a2c893"
+        }
+      },
+      {
+        "function_ancestry": {
+          "function_id": "e232321d-fa68-4735-a5a3-4a6d30bb7802",
+          "function_name": "z_find_plans",
+          "parent_id": "f0b65650-e8df-4f53-8b66-9e5ee6614401",
+          "parent_name": "react_agent"
+        },
+        "payload": {
+          "event_type": "TOOL_END",
+          "event_timestamp": 1747566907.6126819,
+          "span_event_timestamp": 1747566907.0476696,
+          "framework": "langchain",
+          "name": "text_file_ingest",
+          "tags": null,
+          "metadata": {
+            "chat_responses": null,
+            "chat_inputs": null,
+            "tool_inputs": null,
+            "tool_outputs": "DOCA GPUNetIO enables GPU-centric solutions that remove the CPU from the critical path by providing the following features:\n   GPUDirect Async Kernel-Initiated Network (GDAKIN) communications – a CUDA kernel can invoke GPUNetIO device functions to receive or send, directly interacting with the NIC\n       CPU intervention is not needed in the application critical path\n   GPUDirect RDMA – receive packets directly into a contiguous GPU memory​ area\n\nSmart memory allocation – allocate aligned GPU memory buffers exposing them to direct CPU access\n       Combination of CUDA and DPDK gpudev library (which requires the GDRCopy library) already embedded in the DPDK released with DOCA\n   Ethernet protocol management on GPU\n\nThe following sections present an overview of possible GPU packet processing pipeline application layouts combining DOCA GPUNetIO building blocks.\n\nCPU intervention is not needed in the application critical path\n   GPUDirect RDMA – receive packets directly into a contiguous GPU memory​ area\n   Semaphores – provide a standardized I/O communication protocol between the receiving entity and the CUDA kernel real-time packet processing​\n   Smart memory allocation – allocate aligned GPU memory buffers exposing them to direct CPU access",
+            "tool_info": null,
+            "span_inputs": null,
+            "span_outputs": null,
+            "provided_metadata": null
+          },
+          "data": {
+            "input": "LangSmith features",
+            "output": "DOCA GPUNetIO enables GPU-centric solutions that remove the CPU from the critical path by providing the following features:\n   GPUDirect Async Kernel-Initiated Network (GDAKIN) communications – a CUDA kernel can invoke GPUNetIO device functions to receive or send, directly interacting with the NIC\n       CPU intervention is not needed in the application critical path\n   GPUDirect RDMA – receive packets directly into a contiguous GPU memory​ area\n\nSmart memory allocation – allocate aligned GPU memory buffers exposing them to direct CPU access\n       Combination of CUDA and DPDK gpudev library (which requires the GDRCopy library) already embedded in the DPDK released with DOCA\n   Ethernet protocol management on GPU\n\nThe following sections present an overview of possible GPU packet processing pipeline application layouts combining DOCA GPUNetIO building blocks.\n\nCPU intervention is not needed in the application critical path\n   GPUDirect RDMA – receive packets directly into a contiguous GPU memory​ area\n   Semaphores – provide a standardized I/O communication protocol between the receiving entity and the CUDA kernel real-time packet processing​\n   Smart memory allocation – allocate aligned GPU memory buffers exposing them to direct CPU access",
+            "chunk": null
+          },
+          "usage_info": {
+            "token_usage": {
+              "prompt_tokens": 0,
+              "completion_tokens": 0,
+              "total_tokens": 0
+            },
+            "num_llm_calls": 0,
+            "seconds_between_calls": 0
+          },
+          "UUID": "f0b65650-e8df-4f53-8b66-9e5ee6614401"
+        }
+      },
+      {
+        "function_ancestry": {
+          "function_id": "425563ca-ae71-4f32-bb4e-92ce7e725d46",
+          "function_name": "react_agent",
+          "parent_id": "52264f30-95f8-4ab5-9e2a-bd2423d89756",
+          "parent_name": "root"
+        },
+        "payload": {
+          "event_type": "TOOL_END",
+          "event_timestamp": 1747566907.6132572,
+          "span_event_timestamp": 1747566907.0467422,
+          "framework": "langchain",
+          "name": "doca_documents",
+          "tags": null,
+          "metadata": {
+            "chat_responses": null,
+            "chat_inputs": null,
+            "tool_inputs": null,
+            "tool_outputs": "DOCA GPUNetIO enables GPU-centric solutions that remove the CPU from the critical path by providing the following features:\n   GPUDirect Async Kernel-Initiated Network (GDAKIN) communications – a CUDA kernel can invoke GPUNetIO device functions to receive or send, directly interacting with the NIC\n       CPU intervention is not needed in the application critical path\n   GPUDirect RDMA – receive packets directly into a contiguous GPU memory​ area\n\nSmart memory allocation – allocate aligned GPU memory buffers exposing them to direct CPU access\n       Combination of CUDA and DPDK gpudev library (which requires the GDRCopy library) already embedded in the DPDK released with DOCA\n   Ethernet protocol management on GPU\n\nThe following sections present an overview of possible GPU packet processing pipeline application layouts combining DOCA GPUNetIO building blocks.\n\nCPU intervention is not needed in the application critical path\n   GPUDirect RDMA – receive packets directly into a contiguous GPU memory​ area\n   Semaphores – provide a standardized I/O communication protocol between the receiving entity and the CUDA kernel real-time packet processing​\n   Smart memory allocation – allocate aligned GPU memory buffers exposing them to direct CPU access",
+            "tool_info": null,
+            "span_inputs": null,
+            "span_outputs": null,
+            "provided_metadata": null
+          },
+          "data": {
+            "input": "{'query': 'LangSmith features'}",
+            "output": "DOCA GPUNetIO enables GPU-centric solutions that remove the CPU from the critical path by providing the following features:\n   GPUDirect Async Kernel-Initiated Network (GDAKIN) communications – a CUDA kernel can invoke GPUNetIO device functions to receive or send, directly interacting with the NIC\n       CPU intervention is not needed in the application critical path\n   GPUDirect RDMA – receive packets directly into a contiguous GPU memory​ area\n\nSmart memory allocation – allocate aligned GPU memory buffers exposing them to direct CPU access\n       Combination of CUDA and DPDK gpudev library (which requires the GDRCopy library) already embedded in the DPDK released with DOCA\n   Ethernet protocol management on GPU\n\nThe following sections present an overview of possible GPU packet processing pipeline application layouts combining DOCA GPUNetIO building blocks.\n\nCPU intervention is not needed in the application critical path\n   GPUDirect RDMA – receive packets directly into a contiguous GPU memory​ area\n   Semaphores – provide a standardized I/O communication protocol between the receiving entity and the CUDA kernel real-time packet processing​\n   Smart memory allocation – allocate aligned GPU memory buffers exposing them to direct CPU access",
+            "chunk": null
+          },
+          "usage_info": {
+            "token_usage": {
+              "prompt_tokens": 0,
+              "completion_tokens": 0,
+              "total_tokens": 0
+            },
+            "num_llm_calls": 0,
+            "seconds_between_calls": 0
+          },
+          "UUID": "52264f30-95f8-4ab5-9e2a-bd2423d89756"
+        }
+      },
+      {
+        "function_ancestry": {
+          "function_id": "425563ca-ae71-4f32-bb4e-92ce7e725d46",
+          "function_name": "react_agent",
+          "parent_id": "b36e65d3-bc62-4ad0-8f17-1f4519b58c5f",
+          "parent_name": "root"
+        },
+        "payload": {
+          "event_type": "LLM_END",
+          "event_timestamp": 1747566913.4563403,
+          "span_event_timestamp": 1747566907.6162746,
+          "framework": "langchain",
+          "name": "meta/llama-3.1-70b-instruct",
+          "tags": null,
+          "metadata": {
+            "chat_responses": [
+              {
+                "text": "Thought: I now know the final answer\nFinal Answer: The main features of LangSmith are not mentioned in the provided text. The text appears to be describing the features of DOCA GPUNetIO, which include GPUDirect Async Kernel-Initiated Network (GDAKIN) communications, GPUDirect RDMA, smart memory allocation, Ethernet protocol management on GPU, and semaphores.",
+                "generation_info": null,
+                "type": "ChatGenerationChunk",
+                "message": {
+                  "content": "Thought: I now know the final answer\nFinal Answer: The main features of LangSmith are not mentioned in the provided text. The text appears to be describing the features of DOCA GPUNetIO, which include GPUDirect Async Kernel-Initiated Network (GDAKIN) communications, GPUDirect RDMA, smart memory allocation, Ethernet protocol management on GPU, and semaphores.",
+                  "additional_kwargs": {},
+                  "response_metadata": {
+                    "finish_reason": "stop",
+                    "model_name": "meta/llama-3.1-70b-instruct"
+                  },
+                  "type": "AIMessageChunk",
+                  "name": null,
+                  "id": "run--b36e65d3-bc62-4ad0-8f17-1f4519b58c5f"
+                }
+              }
+            ],
+            "chat_inputs": null,
+            "tool_inputs": null,
+            "tool_outputs": null,
+            "tool_info": null,
+            "span_inputs": null,
+            "span_outputs": null,
+            "provided_metadata": null
+          },
+          "data": {
+            "input": "DOCA GPUNetIO enables GPU-centric solutions that remove the CPU from the critical path by providing the following features:\n   GPUDirect Async Kernel-Initiated Network (GDAKIN) communications – a CUDA kernel can invoke GPUNetIO device functions to receive or send, directly interacting with the NIC\n       CPU intervention is not needed in the application critical path\n   GPUDirect RDMA – receive packets directly into a contiguous GPU memory​ area\n\nSmart memory allocation – allocate aligned GPU memory buffers exposing them to direct CPU access\n       Combination of CUDA and DPDK gpudev library (which requires the GDRCopy library) already embedded in the DPDK released with DOCA\n   Ethernet protocol management on GPU\n\nThe following sections present an overview of possible GPU packet processing pipeline application layouts combining DOCA GPUNetIO building blocks.\n\nCPU intervention is not needed in the application critical path\n   GPUDirect RDMA – receive packets directly into a contiguous GPU memory​ area\n   Semaphores – provide a standardized I/O communication protocol between the receiving entity and the CUDA kernel real-time packet processing​\n   Smart memory allocation – allocate aligned GPU memory buffers exposing them to direct CPU access",
+            "output": "Thought: I now know the final answer\nFinal Answer: The main features of LangSmith are not mentioned in the provided text. The text appears to be describing the features of DOCA GPUNetIO, which include GPUDirect Async Kernel-Initiated Network (GDAKIN) communications, GPUDirect RDMA, smart memory allocation, Ethernet protocol management on GPU, and semaphores.",
+            "chunk": null
+          },
+          "usage_info": {
+            "token_usage": {
+              "prompt_tokens": 53256,
+              "completion_tokens": 3485,
+              "total_tokens": 56741
+            },
+            "num_llm_calls": 0,
+            "seconds_between_calls": 0
+          },
+          "UUID": "b36e65d3-bc62-4ad0-8f17-1f4519b58c5f"
+        }
+      }
+    ],
+    "expected_intermediate_steps": []
+  },
+  {
+    "id": 2,
+    "question": "How does LangSmith help with LLM application observability?",
+    "answer": "LangSmith provides LLM-native observability features that help throughout all stages of application development. It allows you to add tracing to your application, create dashboards to view key metrics like RPS, error rates and costs, and get meaningful insights from your application.",
+    "generated_answer": "Invalid Format: Missing 'Action:' after 'Thought:'\n",
+    "intermediate_steps": [
+      {
+        "function_ancestry": {
+          "function_id": "533d6dde-4ce9-4b88-8e6b-6408333e4029",
+          "function_name": "react_agent",
+          "parent_id": "d9a01944-e0c9-4767-a24a-a2c83415a2e5",
+          "parent_name": "root"
+        },
+        "payload": {
+          "event_type": "LLM_END",
+          "event_timestamp": 1747566905.4638891,
+          "span_event_timestamp": 1747566904.1422608,
+          "framework": "langchain",
+          "name": "meta/llama-3.1-70b-instruct",
+          "tags": null,
+          "metadata": {
+            "chat_responses": [
+              {
+                "text": "Thought: To answer this question, I need to search for information about LangSmith and its role in LLM application observability.\n\nAction: doca_documents\nAction Input: {\"query\": \"LangSmith LLM application observability\"}\n\n",
+                "generation_info": null,
+                "type": "ChatGenerationChunk",
+                "message": {
+                  "content": "Thought: To answer this question, I need to search for information about LangSmith and its role in LLM application observability.\n\nAction: doca_documents\nAction Input: {\"query\": \"LangSmith LLM application observability\"}\n\n",
+                  "additional_kwargs": {},
+                  "response_metadata": {
+                    "finish_reason": "stop",
+                    "model_name": "meta/llama-3.1-70b-instruct"
+                  },
+                  "type": "AIMessageChunk",
+                  "name": null,
+                  "id": "run--d9a01944-e0c9-4767-a24a-a2c83415a2e5"
+                }
+              }
+            ],
+            "chat_inputs": null,
+            "tool_inputs": null,
+            "tool_outputs": null,
+            "tool_info": null,
+            "span_inputs": null,
+            "span_outputs": null,
+            "provided_metadata": null
+          },
+          "data": {
+            "input": "\nQuestion: How does LangSmith help with LLM application observability?\n",
+            "output": "Thought: To answer this question, I need to search for information about LangSmith and its role in LLM application observability.\n\nAction: doca_documents\nAction Input: {\"query\": \"LangSmith LLM application observability\"}\n\n",
+            "chunk": null
+          },
+          "usage_info": {
+            "token_usage": {
+              "prompt_tokens": 18003,
+              "completion_tokens": 1275,
+              "total_tokens": 19278
+            },
+            "num_llm_calls": 0,
+            "seconds_between_calls": 0
+          },
+          "UUID": "d9a01944-e0c9-4767-a24a-a2c83415a2e5"
+        }
+      },
+      {
+        "function_ancestry": {
+          "function_id": "796d79ea-495d-4519-8189-f4eb121c989e",
+          "function_name": "z_find_plans",
+          "parent_id": "f876625a-bc8c-48b5-a5a1-75611607cc68",
+          "parent_name": "react_agent"
+        },
+        "payload": {
+          "event_type": "TOOL_END",
+          "event_timestamp": 1747566906.0661771,
+          "span_event_timestamp": 1747566905.4689076,
+          "framework": "langchain",
+          "name": "text_file_ingest",
+          "tags": null,
+          "metadata": {
+            "chat_responses": null,
+            "chat_inputs": null,
+            "tool_inputs": null,
+            "tool_outputs": "Applications\n\nHere are the DOCA GPUNetIO features enabled in the current release:\n\nNote\n\nSmart memory allocation – allocate aligned GPU memory buffers exposing them to direct CPU access\n       Combination of CUDA and DPDK gpudev library (which requires the GDRCopy library) already embedded in the DPDK released with DOCA\n   Ethernet protocol management on GPU",
+            "tool_info": null,
+            "span_inputs": null,
+            "span_outputs": null,
+            "provided_metadata": null
+          },
+          "data": {
+            "input": "LangSmith LLM application observability",
+            "output": "Applications\n\nHere are the DOCA GPUNetIO features enabled in the current release:\n\nNote\n\nSmart memory allocation – allocate aligned GPU memory buffers exposing them to direct CPU access\n       Combination of CUDA and DPDK gpudev library (which requires the GDRCopy library) already embedded in the DPDK released with DOCA\n   Ethernet protocol management on GPU",
+            "chunk": null
+          },
+          "usage_info": {
+            "token_usage": {
+              "prompt_tokens": 0,
+              "completion_tokens": 0,
+              "total_tokens": 0
+            },
+            "num_llm_calls": 0,
+            "seconds_between_calls": 0
+          },
+          "UUID": "f876625a-bc8c-48b5-a5a1-75611607cc68"
+        }
+      },
+      {
+        "function_ancestry": {
+          "function_id": "533d6dde-4ce9-4b88-8e6b-6408333e4029",
+          "function_name": "react_agent",
+          "parent_id": "5d9ee745-f7b4-493b-a7f9-09bb0d6b4d2d",
+          "parent_name": "root"
+        },
+        "payload": {
+          "event_type": "TOOL_END",
+          "event_timestamp": 1747566906.066773,
+          "span_event_timestamp": 1747566905.4677296,
+          "framework": "langchain",
+          "name": "doca_documents",
+          "tags": null,
+          "metadata": {
+            "chat_responses": null,
+            "chat_inputs": null,
+            "tool_inputs": null,
+            "tool_outputs": "Applications\n\nHere are the DOCA GPUNetIO features enabled in the current release:\n\nNote\n\nSmart memory allocation – allocate aligned GPU memory buffers exposing them to direct CPU access\n       Combination of CUDA and DPDK gpudev library (which requires the GDRCopy library) already embedded in the DPDK released with DOCA\n   Ethernet protocol management on GPU",
+            "tool_info": null,
+            "span_inputs": null,
+            "span_outputs": null,
+            "provided_metadata": null
+          },
+          "data": {
+            "input": "{'query': 'LangSmith LLM application observability'}",
+            "output": "Applications\n\nHere are the DOCA GPUNetIO features enabled in the current release:\n\nNote\n\nSmart memory allocation – allocate aligned GPU memory buffers exposing them to direct CPU access\n       Combination of CUDA and DPDK gpudev library (which requires the GDRCopy library) already embedded in the DPDK released with DOCA\n   Ethernet protocol management on GPU",
+            "chunk": null
+          },
+          "usage_info": {
+            "token_usage": {
+              "prompt_tokens": 0,
+              "completion_tokens": 0,
+              "total_tokens": 0
+            },
+            "num_llm_calls": 0,
+            "seconds_between_calls": 0
+          },
+          "UUID": "5d9ee745-f7b4-493b-a7f9-09bb0d6b4d2d"
+        }
+      },
+      {
+        "function_ancestry": {
+          "function_id": "533d6dde-4ce9-4b88-8e6b-6408333e4029",
+          "function_name": "react_agent",
+          "parent_id": "4929e538-0b80-41df-80eb-e2ef23cace8f",
+          "parent_name": "root"
+        },
+        "payload": {
+          "event_type": "LLM_END",
+          "event_timestamp": 1747566906.7361934,
+          "span_event_timestamp": 1747566906.0696454,
+          "framework": "langchain",
+          "name": "meta/llama-3.1-70b-instruct",
+          "tags": null,
+          "metadata": {
+            "chat_responses": [
+              {
+                "text": "",
+                "generation_info": null,
+                "type": "ChatGenerationChunk",
+                "message": {
+                  "content": "",
+                  "additional_kwargs": {},
+                  "response_metadata": {
+                    "finish_reason": "stop",
+                    "model_name": "meta/llama-3.1-70b-instruct"
+                  },
+                  "type": "AIMessageChunk",
+                  "name": null,
+                  "id": "run--4929e538-0b80-41df-80eb-e2ef23cace8f"
+                }
+              }
+            ],
+            "chat_inputs": null,
+            "tool_inputs": null,
+            "tool_outputs": null,
+            "tool_info": null,
+            "span_inputs": null,
+            "span_outputs": null,
+            "provided_metadata": null
+          },
+          "data": {
+            "input": "Applications\n\nHere are the DOCA GPUNetIO features enabled in the current release:\n\nNote\n\nSmart memory allocation – allocate aligned GPU memory buffers exposing them to direct CPU access\n       Combination of CUDA and DPDK gpudev library (which requires the GDRCopy library) already embedded in the DPDK released with DOCA\n   Ethernet protocol management on GPU",
+            "output": "",
+            "chunk": null
+          },
+          "usage_info": {
+            "token_usage": {
+              "prompt_tokens": 1928,
+              "completion_tokens": 6,
+              "total_tokens": 1934
+            },
+            "num_llm_calls": 0,
+            "seconds_between_calls": 0
+          },
+          "UUID": "4929e538-0b80-41df-80eb-e2ef23cace8f"
+        }
+      }
+    ],
+    "expected_intermediate_steps": []
+  },
+  {
+    "id": 3,
+    "question": "What is the purpose of LangSmith's evaluation features?",
+    "answer": "LangSmith's evaluation features help in building and running high-quality evaluations for AI applications. It allows you to quickly assess application performance using off-the-shelf evaluators, analyze evaluation results in the UI, compare results over time, and collect human feedback to improve the application.",
+    "generated_answer": "Unfortunately, I couldn't find any information about LangSmith's evaluation features in the provided texts.",
+    "intermediate_steps": [
+      {
+        "function_ancestry": {
+          "function_id": "11b3071e-e719-4459-b1c4-d3dd2d55aac0",
+          "function_name": "react_agent",
+          "parent_id": "0f559512-7ad6-4235-9a10-c043f6687764",
+          "parent_name": "root"
+        },
+        "payload": {
+          "event_type": "LLM_END",
+          "event_timestamp": 1747566905.6706507,
+          "span_event_timestamp": 1747566904.1432102,
+          "framework": "langchain",
+          "name": "meta/llama-3.1-70b-instruct",
+          "tags": null,
+          "metadata": {
+            "chat_responses": [
+              {
+                "text": "Thought: I need to find information about LangSmith's evaluation features to answer this question.\nAction: doca_documents\nAction Input: {'query': \"LangSmith evaluation features\"}\n",
+                "generation_info": null,
+                "type": "ChatGenerationChunk",
+                "message": {
+                  "content": "Thought: I need to find information about LangSmith's evaluation features to answer this question.\nAction: doca_documents\nAction Input: {'query': \"LangSmith evaluation features\"}\n",
+                  "additional_kwargs": {},
+                  "response_metadata": {
+                    "finish_reason": "stop",
+                    "model_name": "meta/llama-3.1-70b-instruct"
+                  },
+                  "type": "AIMessageChunk",
+                  "name": null,
+                  "id": "run--0f559512-7ad6-4235-9a10-c043f6687764"
+                }
+              }
+            ],
+            "chat_inputs": null,
+            "tool_inputs": null,
+            "tool_outputs": null,
+            "tool_info": null,
+            "span_inputs": null,
+            "span_outputs": null,
+            "provided_metadata": null
+          },
+          "data": {
+            "input": "\nQuestion: What is the purpose of LangSmith's evaluation features?\n",
+            "output": "Thought: I need to find information about LangSmith's evaluation features to answer this question.\nAction: doca_documents\nAction Input: {'query': \"LangSmith evaluation features\"}\n",
+            "chunk": null
+          },
+          "usage_info": {
+            "token_usage": {
+              "prompt_tokens": 14080,
+              "completion_tokens": 780,
+              "total_tokens": 14860
+            },
+            "num_llm_calls": 0,
+            "seconds_between_calls": 0
+          },
+          "UUID": "0f559512-7ad6-4235-9a10-c043f6687764"
+        }
+      },
+      {
+        "function_ancestry": {
+          "function_id": "20c87537-5309-4afc-a211-0f8265d3dda9",
+          "function_name": "z_find_plans",
+          "parent_id": "f7eacdaf-a4e7-4169-a749-cad17db73abd",
+          "parent_name": "react_agent"
+        },
+        "payload": {
+          "event_type": "TOOL_END",
+          "event_timestamp": 1747566906.2258224,
+          "span_event_timestamp": 1747566905.6745608,
+          "framework": "langchain",
+          "name": "text_file_ingest",
+          "tags": null,
+          "metadata": {
+            "chat_responses": null,
+            "chat_inputs": null,
+            "tool_inputs": null,
+            "tool_outputs": "DOCA GPUNetIO enables GPU-centric solutions that remove the CPU from the critical path by providing the following features:\n   GPUDirect Async Kernel-Initiated Network (GDAKIN) communications – a CUDA kernel can invoke GPUNetIO device functions to receive or send, directly interacting with the NIC\n       CPU intervention is not needed in the application critical path\n   GPUDirect RDMA – receive packets directly into a contiguous GPU memory​ area\n\nSmart memory allocation – allocate aligned GPU memory buffers exposing them to direct CPU access\n       Combination of CUDA and DPDK gpudev library (which requires the GDRCopy library) already embedded in the DPDK released with DOCA\n   Ethernet protocol management on GPU\n\nHere are the DOCA GPUNetIO features enabled in the current release:\n\nApplications",
+            "tool_info": null,
+            "span_inputs": null,
+            "span_outputs": null,
+            "provided_metadata": null
+          },
+          "data": {
+            "input": "LangSmith evaluation features",
+            "output": "DOCA GPUNetIO enables GPU-centric solutions that remove the CPU from the critical path by providing the following features:\n   GPUDirect Async Kernel-Initiated Network (GDAKIN) communications – a CUDA kernel can invoke GPUNetIO device functions to receive or send, directly interacting with the NIC\n       CPU intervention is not needed in the application critical path\n   GPUDirect RDMA – receive packets directly into a contiguous GPU memory​ area\n\nSmart memory allocation – allocate aligned GPU memory buffers exposing them to direct CPU access\n       Combination of CUDA and DPDK gpudev library (which requires the GDRCopy library) already embedded in the DPDK released with DOCA\n   Ethernet protocol management on GPU\n\nHere are the DOCA GPUNetIO features enabled in the current release:\n\nApplications",
+            "chunk": null
+          },
+          "usage_info": {
+            "token_usage": {
+              "prompt_tokens": 0,
+              "completion_tokens": 0,
+              "total_tokens": 0
+            },
+            "num_llm_calls": 0,
+            "seconds_between_calls": 0
+          },
+          "UUID": "f7eacdaf-a4e7-4169-a749-cad17db73abd"
+        }
+      },
+      {
+        "function_ancestry": {
+          "function_id": "11b3071e-e719-4459-b1c4-d3dd2d55aac0",
+          "function_name": "react_agent",
+          "parent_id": "c803daf0-21a4-46df-af92-3b66808f4ab5",
+          "parent_name": "root"
+        },
+        "payload": {
+          "event_type": "TOOL_END",
+          "event_timestamp": 1747566906.2264218,
+          "span_event_timestamp": 1747566905.673453,
+          "framework": "langchain",
+          "name": "doca_documents",
+          "tags": null,
+          "metadata": {
+            "chat_responses": null,
+            "chat_inputs": null,
+            "tool_inputs": null,
+            "tool_outputs": "DOCA GPUNetIO enables GPU-centric solutions that remove the CPU from the critical path by providing the following features:\n   GPUDirect Async Kernel-Initiated Network (GDAKIN) communications – a CUDA kernel can invoke GPUNetIO device functions to receive or send, directly interacting with the NIC\n       CPU intervention is not needed in the application critical path\n   GPUDirect RDMA – receive packets directly into a contiguous GPU memory​ area\n\nSmart memory allocation – allocate aligned GPU memory buffers exposing them to direct CPU access\n       Combination of CUDA and DPDK gpudev library (which requires the GDRCopy library) already embedded in the DPDK released with DOCA\n   Ethernet protocol management on GPU\n\nHere are the DOCA GPUNetIO features enabled in the current release:\n\nApplications",
+            "tool_info": null,
+            "span_inputs": null,
+            "span_outputs": null,
+            "provided_metadata": null
+          },
+          "data": {
+            "input": "{'query': 'LangSmith evaluation features'}",
+            "output": "DOCA GPUNetIO enables GPU-centric solutions that remove the CPU from the critical path by providing the following features:\n   GPUDirect Async Kernel-Initiated Network (GDAKIN) communications – a CUDA kernel can invoke GPUNetIO device functions to receive or send, directly interacting with the NIC\n       CPU intervention is not needed in the application critical path\n   GPUDirect RDMA – receive packets directly into a contiguous GPU memory​ area\n\nSmart memory allocation – allocate aligned GPU memory buffers exposing them to direct CPU access\n       Combination of CUDA and DPDK gpudev library (which requires the GDRCopy library) already embedded in the DPDK released with DOCA\n   Ethernet protocol management on GPU\n\nHere are the DOCA GPUNetIO features enabled in the current release:\n\nApplications",
+            "chunk": null
+          },
+          "usage_info": {
+            "token_usage": {
+              "prompt_tokens": 0,
+              "completion_tokens": 0,
+              "total_tokens": 0
+            },
+            "num_llm_calls": 0,
+            "seconds_between_calls": 0
+          },
+          "UUID": "c803daf0-21a4-46df-af92-3b66808f4ab5"
+        }
+      },
+      {
+        "function_ancestry": {
+          "function_id": "11b3071e-e719-4459-b1c4-d3dd2d55aac0",
+          "function_name": "react_agent",
+          "parent_id": "9bd6ade6-ed79-464c-a8f1-3dd429e92386",
+          "parent_name": "root"
+        },
+        "payload": {
+          "event_type": "LLM_END",
+          "event_timestamp": 1747566907.2676976,
+          "span_event_timestamp": 1747566906.2292871,
+          "framework": "langchain",
+          "name": "meta/llama-3.1-70b-instruct",
+          "tags": null,
+          "metadata": {
+            "chat_responses": [
+              {
+                "text": "Thought: The provided text does not mention LangSmith's evaluation features, so I need to try again.\nAction: doca_documents\nAction Input: {'query': \"LangSmith evaluation features purpose\"}",
+                "generation_info": null,
+                "type": "ChatGenerationChunk",
+                "message": {
+                  "content": "Thought: The provided text does not mention LangSmith's evaluation features, so I need to try again.\nAction: doca_documents\nAction Input: {'query': \"LangSmith evaluation features purpose\"}",
+                  "additional_kwargs": {},
+                  "response_metadata": {
+                    "finish_reason": "stop",
+                    "model_name": "meta/llama-3.1-70b-instruct"
+                  },
+                  "type": "AIMessageChunk",
+                  "name": null,
+                  "id": "run--9bd6ade6-ed79-464c-a8f1-3dd429e92386"
+                }
+              }
+            ],
+            "chat_inputs": null,
+            "tool_inputs": null,
+            "tool_outputs": null,
+            "tool_info": null,
+            "span_inputs": null,
+            "span_outputs": null,
+            "provided_metadata": null
+          },
+          "data": {
+            "input": "DOCA GPUNetIO enables GPU-centric solutions that remove the CPU from the critical path by providing the following features:\n   GPUDirect Async Kernel-Initiated Network (GDAKIN) communications – a CUDA kernel can invoke GPUNetIO device functions to receive or send, directly interacting with the NIC\n       CPU intervention is not needed in the application critical path\n   GPUDirect RDMA – receive packets directly into a contiguous GPU memory​ area\n\nSmart memory allocation – allocate aligned GPU memory buffers exposing them to direct CPU access\n       Combination of CUDA and DPDK gpudev library (which requires the GDRCopy library) already embedded in the DPDK released with DOCA\n   Ethernet protocol management on GPU\n\nHere are the DOCA GPUNetIO features enabled in the current release:\n\nApplications",
+            "output": "Thought: The provided text does not mention LangSmith's evaluation features, so I need to try again.\nAction: doca_documents\nAction Input: {'query': \"LangSmith evaluation features purpose\"}",
+            "chunk": null
+          },
+          "usage_info": {
+            "token_usage": {
+              "prompt_tokens": 23604,
+              "completion_tokens": 860,
+              "total_tokens": 24464
+            },
+            "num_llm_calls": 0,
+            "seconds_between_calls": 0
+          },
+          "UUID": "9bd6ade6-ed79-464c-a8f1-3dd429e92386"
+        }
+      },
+      {
+        "function_ancestry": {
+          "function_id": "855405ea-6c0e-4c08-8b7f-fbd5ac3d51d4",
+          "function_name": "z_find_plans",
+          "parent_id": "0284fea7-f5cd-4112-83e7-db96dd3f9f17",
+          "parent_name": "react_agent"
+        },
+        "payload": {
+          "event_type": "TOOL_END",
+          "event_timestamp": 1747566907.8044026,
+          "span_event_timestamp": 1747566907.2713754,
+          "framework": "langchain",
+          "name": "text_file_ingest",
+          "tags": null,
+          "metadata": {
+            "chat_responses": null,
+            "chat_inputs": null,
+            "tool_inputs": null,
+            "tool_outputs": "One primary motivation is the high degree of parallelism that the GPU can enable to process in parallel multiple packets while offering scalability and programmability.\n\nFor an overview of the basic concepts of these techniques and an initial solution based on the DPDK gpudev library, see Boosting Inline Packet Processing Using DPDK and GPUdev with GPUs.\n\nReal-time GPU processing of network packets is a technique useful to several different application domains, including signal processing, network security, information gathering, and input reconstruction. The goal of these applications is to realize an inline packet processing pipeline to receive packets in GPU memory (without staging copies through CPU memory); process them in parallel with one or more CUDA kernels; and then run inference, evaluate, or send over the network the result of the calculation.\n\nA growing number of network applications need to exercise GPU real-time packet processing in order to implement high data rate solutions: data filtering, data placement, network analysis, sensors’ signal processing, and more.\n\nOne primary motivation is the high degree of parallelism that the GPU can enable to process in parallel multiple packets while offering scalability and programmability.\n\nSmart memory allocation – allocate aligned GPU memory buffers exposing them to direct CPU access\n       Combination of CUDA and DPDK gpudev library (which requires the GDRCopy library) already embedded in the DPDK released with DOCA\n   Ethernet protocol management on GPU",
+            "tool_info": null,
+            "span_inputs": null,
+            "span_outputs": null,
+            "provided_metadata": null
+          },
+          "data": {
+            "input": "LangSmith evaluation features purpose",
+            "output": "One primary motivation is the high degree of parallelism that the GPU can enable to process in parallel multiple packets while offering scalability and programmability.\n\nFor an overview of the basic concepts of these techniques and an initial solution based on the DPDK gpudev library, see Boosting Inline Packet Processing Using DPDK and GPUdev with GPUs.\n\nReal-time GPU processing of network packets is a technique useful to several different application domains, including signal processing, network security, information gathering, and input reconstruction. The goal of these applications is to realize an inline packet processing pipeline to receive packets in GPU memory (without staging copies through CPU memory); process them in parallel with one or more CUDA kernels; and then run inference, evaluate, or send over the network the result of the calculation.\n\nA growing number of network applications need to exercise GPU real-time packet processing in order to implement high data rate solutions: data filtering, data placement, network analysis, sensors’ signal processing, and more.\n\nOne primary motivation is the high degree of parallelism that the GPU can enable to process in parallel multiple packets while offering scalability and programmability.\n\nSmart memory allocation – allocate aligned GPU memory buffers exposing them to direct CPU access\n       Combination of CUDA and DPDK gpudev library (which requires the GDRCopy library) already embedded in the DPDK released with DOCA\n   Ethernet protocol management on GPU",
+            "chunk": null
+          },
+          "usage_info": {
+            "token_usage": {
+              "prompt_tokens": 0,
+              "completion_tokens": 0,
+              "total_tokens": 0
+            },
+            "num_llm_calls": 0,
+            "seconds_between_calls": 0
+          },
+          "UUID": "0284fea7-f5cd-4112-83e7-db96dd3f9f17"
+        }
+      },
+      {
+        "function_ancestry": {
+          "function_id": "11b3071e-e719-4459-b1c4-d3dd2d55aac0",
+          "function_name": "react_agent",
+          "parent_id": "afc34c17-58b9-4ffb-b684-71f99b0d1cc5",
+          "parent_name": "root"
+        },
+        "payload": {
+          "event_type": "TOOL_END",
+          "event_timestamp": 1747566907.8049922,
+          "span_event_timestamp": 1747566907.2704294,
+          "framework": "langchain",
+          "name": "doca_documents",
+          "tags": null,
+          "metadata": {
+            "chat_responses": null,
+            "chat_inputs": null,
+            "tool_inputs": null,
+            "tool_outputs": "One primary motivation is the high degree of parallelism that the GPU can enable to process in parallel multiple packets while offering scalability and programmability.\n\nFor an overview of the basic concepts of these techniques and an initial solution based on the DPDK gpudev library, see Boosting Inline Packet Processing Using DPDK and GPUdev with GPUs.\n\nReal-time GPU processing of network packets is a technique useful to several different application domains, including signal processing, network security, information gathering, and input reconstruction. The goal of these applications is to realize an inline packet processing pipeline to receive packets in GPU memory (without staging copies through CPU memory); process them in parallel with one or more CUDA kernels; and then run inference, evaluate, or send over the network the result of the calculation.\n\nA growing number of network applications need to exercise GPU real-time packet processing in order to implement high data rate solutions: data filtering, data placement, network analysis, sensors’ signal processing, and more.\n\nOne primary motivation is the high degree of parallelism that the GPU can enable to process in parallel multiple packets while offering scalability and programmability.\n\nSmart memory allocation – allocate aligned GPU memory buffers exposing them to direct CPU access\n       Combination of CUDA and DPDK gpudev library (which requires the GDRCopy library) already embedded in the DPDK released with DOCA\n   Ethernet protocol management on GPU",
+            "tool_info": null,
+            "span_inputs": null,
+            "span_outputs": null,
+            "provided_metadata": null
+          },
+          "data": {
+            "input": "{'query': 'LangSmith evaluation features purpose'}",
+            "output": "One primary motivation is the high degree of parallelism that the GPU can enable to process in parallel multiple packets while offering scalability and programmability.\n\nFor an overview of the basic concepts of these techniques and an initial solution based on the DPDK gpudev library, see Boosting Inline Packet Processing Using DPDK and GPUdev with GPUs.\n\nReal-time GPU processing of network packets is a technique useful to several different application domains, including signal processing, network security, information gathering, and input reconstruction. The goal of these applications is to realize an inline packet processing pipeline to receive packets in GPU memory (without staging copies through CPU memory); process them in parallel with one or more CUDA kernels; and then run inference, evaluate, or send over the network the result of the calculation.\n\nA growing number of network applications need to exercise GPU real-time packet processing in order to implement high data rate solutions: data filtering, data placement, network analysis, sensors’ signal processing, and more.\n\nOne primary motivation is the high degree of parallelism that the GPU can enable to process in parallel multiple packets while offering scalability and programmability.\n\nSmart memory allocation – allocate aligned GPU memory buffers exposing them to direct CPU access\n       Combination of CUDA and DPDK gpudev library (which requires the GDRCopy library) already embedded in the DPDK released with DOCA\n   Ethernet protocol management on GPU",
+            "chunk": null
+          },
+          "usage_info": {
+            "token_usage": {
+              "prompt_tokens": 0,
+              "completion_tokens": 0,
+              "total_tokens": 0
+            },
+            "num_llm_calls": 0,
+            "seconds_between_calls": 0
+          },
+          "UUID": "afc34c17-58b9-4ffb-b684-71f99b0d1cc5"
+        }
+      },
+      {
+        "function_ancestry": {
+          "function_id": "11b3071e-e719-4459-b1c4-d3dd2d55aac0",
+          "function_name": "react_agent",
+          "parent_id": "1ea525aa-8c82-44de-ba3c-24207406a06c",
+          "parent_name": "root"
+        },
+        "payload": {
+          "event_type": "LLM_END",
+          "event_timestamp": 1747566909.1613297,
+          "span_event_timestamp": 1747566907.808263,
+          "framework": "langchain",
+          "name": "meta/llama-3.1-70b-instruct",
+          "tags": null,
+          "metadata": {
+            "chat_responses": [
+              {
+                "text": "Thought: The provided text still does not mention LangSmith's evaluation features, so I need to try again.\nAction: doca_documents\nAction Input: {'query': \"LangSmith evaluation features purpose DOCA\"}",
+                "generation_info": null,
+                "type": "ChatGenerationChunk",
+                "message": {
+                  "content": "Thought: The provided text still does not mention LangSmith's evaluation features, so I need to try again.\nAction: doca_documents\nAction Input: {'query': \"LangSmith evaluation features purpose DOCA\"}",
+                  "additional_kwargs": {},
+                  "response_metadata": {
+                    "finish_reason": "stop",
+                    "model_name": "meta/llama-3.1-70b-instruct"
+                  },
+                  "type": "AIMessageChunk",
+                  "name": null,
+                  "id": "run--1ea525aa-8c82-44de-ba3c-24207406a06c"
+                }
+              }
+            ],
+            "chat_inputs": null,
+            "tool_inputs": null,
+            "tool_outputs": null,
+            "tool_info": null,
+            "span_inputs": null,
+            "span_outputs": null,
+            "provided_metadata": null
+          },
+          "data": {
+            "input": "One primary motivation is the high degree of parallelism that the GPU can enable to process in parallel multiple packets while offering scalability and programmability.\n\nFor an overview of the basic concepts of these techniques and an initial solution based on the DPDK gpudev library, see Boosting Inline Packet Processing Using DPDK and GPUdev with GPUs.\n\nReal-time GPU processing of network packets is a technique useful to several different application domains, including signal processing, network security, information gathering, and input reconstruction. The goal of these applications is to realize an inline packet processing pipeline to receive packets in GPU memory (without staging copies through CPU memory); process them in parallel with one or more CUDA kernels; and then run inference, evaluate, or send over the network the result of the calculation.\n\nA growing number of network applications need to exercise GPU real-time packet processing in order to implement high data rate solutions: data filtering, data placement, network analysis, sensors’ signal processing, and more.\n\nOne primary motivation is the high degree of parallelism that the GPU can enable to process in parallel multiple packets while offering scalability and programmability.\n\nSmart memory allocation – allocate aligned GPU memory buffers exposing them to direct CPU access\n       Combination of CUDA and DPDK gpudev library (which requires the GDRCopy library) already embedded in the DPDK released with DOCA\n   Ethernet protocol management on GPU",
+            "output": "Thought: The provided text still does not mention LangSmith's evaluation features, so I need to try again.\nAction: doca_documents\nAction Input: {'query': \"LangSmith evaluation features purpose DOCA\"}",
+            "chunk": null
+          },
+          "usage_info": {
+            "token_usage": {
+              "prompt_tokens": 39825,
+              "completion_tokens": 989,
+              "total_tokens": 40814
+            },
+            "num_llm_calls": 0,
+            "seconds_between_calls": 0
+          },
+          "UUID": "1ea525aa-8c82-44de-ba3c-24207406a06c"
+        }
+      },
+      {
+        "function_ancestry": {
+          "function_id": "bd84edde-1abe-4197-92ec-2d38656ee03e",
+          "function_name": "z_find_plans",
+          "parent_id": "f2e50368-b85f-4821-a4ed-06764397a2c5",
+          "parent_name": "react_agent"
+        },
+        "payload": {
+          "event_type": "TOOL_END",
+          "event_timestamp": 1747566909.85302,
+          "span_event_timestamp": 1747566909.1660328,
+          "framework": "langchain",
+          "name": "text_file_ingest",
+          "tags": null,
+          "metadata": {
+            "chat_responses": null,
+            "chat_inputs": null,
+            "tool_inputs": null,
+            "tool_outputs": "DOCA GPUNetIO enables GPU-centric solutions that remove the CPU from the critical path by providing the following features:\n   GPUDirect Async Kernel-Initiated Network (GDAKIN) communications – a CUDA kernel can invoke GPUNetIO device functions to receive or send, directly interacting with the NIC\n       CPU intervention is not needed in the application critical path\n   GPUDirect RDMA – receive packets directly into a contiguous GPU memory​ area\n\nMany DOCA applications combine the functionality of more than one DOCA library and offer an example implementation for common scenarios of interest to users such as application recognition according to incoming/outgoing traffic, scanning files using the hardware RegEx acceleration, and much more.\nFor more information about DOCA applications, refer to DOCA Applications.\n\nAlternatively, DOCA offers the ability to map GPU memory through the dmabuf providing a set high-level functions. Prerequisites are DOCA installed on a system with:\n    Linux Kernel ≥ 6.2\n    libibverbs ≥ 1.14.44\n    CUDA Toolkit installed with the -m=kernel-open flag (which implies the NVIDIA driver in Open Source mode)\n\nFor this reason, DOCA GPUNetIO is composed of two libraries:\n   libdoca_gpunetio with functions invoked by CPU to prepare the GPU, allocate memory and objects\n   libdoca_gpunetio_device with functions invoked by GPU within CUDA kernels during the data path",
+            "tool_info": null,
+            "span_inputs": null,
+            "span_outputs": null,
+            "provided_metadata": null
+          },
+          "data": {
+            "input": "LangSmith evaluation features purpose DOCA",
+            "output": "DOCA GPUNetIO enables GPU-centric solutions that remove the CPU from the critical path by providing the following features:\n   GPUDirect Async Kernel-Initiated Network (GDAKIN) communications – a CUDA kernel can invoke GPUNetIO device functions to receive or send, directly interacting with the NIC\n       CPU intervention is not needed in the application critical path\n   GPUDirect RDMA – receive packets directly into a contiguous GPU memory​ area\n\nMany DOCA applications combine the functionality of more than one DOCA library and offer an example implementation for common scenarios of interest to users such as application recognition according to incoming/outgoing traffic, scanning files using the hardware RegEx acceleration, and much more.\nFor more information about DOCA applications, refer to DOCA Applications.\n\nAlternatively, DOCA offers the ability to map GPU memory through the dmabuf providing a set high-level functions. Prerequisites are DOCA installed on a system with:\n    Linux Kernel ≥ 6.2\n    libibverbs ≥ 1.14.44\n    CUDA Toolkit installed with the -m=kernel-open flag (which implies the NVIDIA driver in Open Source mode)\n\nFor this reason, DOCA GPUNetIO is composed of two libraries:\n   libdoca_gpunetio with functions invoked by CPU to prepare the GPU, allocate memory and objects\n   libdoca_gpunetio_device with functions invoked by GPU within CUDA kernels during the data path",
+            "chunk": null
+          },
+          "usage_info": {
+            "token_usage": {
+              "prompt_tokens": 0,
+              "completion_tokens": 0,
+              "total_tokens": 0
+            },
+            "num_llm_calls": 0,
+            "seconds_between_calls": 0
+          },
+          "UUID": "f2e50368-b85f-4821-a4ed-06764397a2c5"
+        }
+      },
+      {
+        "function_ancestry": {
+          "function_id": "11b3071e-e719-4459-b1c4-d3dd2d55aac0",
+          "function_name": "react_agent",
+          "parent_id": "bdc7b854-5987-437b-8d0c-3e656a4dd9d2",
+          "parent_name": "root"
+        },
+        "payload": {
+          "event_type": "TOOL_END",
+          "event_timestamp": 1747566909.8541467,
+          "span_event_timestamp": 1747566909.1643229,
+          "framework": "langchain",
+          "name": "doca_documents",
+          "tags": null,
+          "metadata": {
+            "chat_responses": null,
+            "chat_inputs": null,
+            "tool_inputs": null,
+            "tool_outputs": "DOCA GPUNetIO enables GPU-centric solutions that remove the CPU from the critical path by providing the following features:\n   GPUDirect Async Kernel-Initiated Network (GDAKIN) communications – a CUDA kernel can invoke GPUNetIO device functions to receive or send, directly interacting with the NIC\n       CPU intervention is not needed in the application critical path\n   GPUDirect RDMA – receive packets directly into a contiguous GPU memory​ area\n\nMany DOCA applications combine the functionality of more than one DOCA library and offer an example implementation for common scenarios of interest to users such as application recognition according to incoming/outgoing traffic, scanning files using the hardware RegEx acceleration, and much more.\nFor more information about DOCA applications, refer to DOCA Applications.\n\nAlternatively, DOCA offers the ability to map GPU memory through the dmabuf providing a set high-level functions. Prerequisites are DOCA installed on a system with:\n    Linux Kernel ≥ 6.2\n    libibverbs ≥ 1.14.44\n    CUDA Toolkit installed with the -m=kernel-open flag (which implies the NVIDIA driver in Open Source mode)\n\nFor this reason, DOCA GPUNetIO is composed of two libraries:\n   libdoca_gpunetio with functions invoked by CPU to prepare the GPU, allocate memory and objects\n   libdoca_gpunetio_device with functions invoked by GPU within CUDA kernels during the data path",
+            "tool_info": null,
+            "span_inputs": null,
+            "span_outputs": null,
+            "provided_metadata": null
+          },
+          "data": {
+            "input": "{'query': 'LangSmith evaluation features purpose DOCA'}",
+            "output": "DOCA GPUNetIO enables GPU-centric solutions that remove the CPU from the critical path by providing the following features:\n   GPUDirect Async Kernel-Initiated Network (GDAKIN) communications – a CUDA kernel can invoke GPUNetIO device functions to receive or send, directly interacting with the NIC\n       CPU intervention is not needed in the application critical path\n   GPUDirect RDMA – receive packets directly into a contiguous GPU memory​ area\n\nMany DOCA applications combine the functionality of more than one DOCA library and offer an example implementation for common scenarios of interest to users such as application recognition according to incoming/outgoing traffic, scanning files using the hardware RegEx acceleration, and much more.\nFor more information about DOCA applications, refer to DOCA Applications.\n\nAlternatively, DOCA offers the ability to map GPU memory through the dmabuf providing a set high-level functions. Prerequisites are DOCA installed on a system with:\n    Linux Kernel ≥ 6.2\n    libibverbs ≥ 1.14.44\n    CUDA Toolkit installed with the -m=kernel-open flag (which implies the NVIDIA driver in Open Source mode)\n\nFor this reason, DOCA GPUNetIO is composed of two libraries:\n   libdoca_gpunetio with functions invoked by CPU to prepare the GPU, allocate memory and objects\n   libdoca_gpunetio_device with functions invoked by GPU within CUDA kernels during the data path",
+            "chunk": null
+          },
+          "usage_info": {
+            "token_usage": {
+              "prompt_tokens": 0,
+              "completion_tokens": 0,
+              "total_tokens": 0
+            },
+            "num_llm_calls": 0,
+            "seconds_between_calls": 0
+          },
+          "UUID": "bdc7b854-5987-437b-8d0c-3e656a4dd9d2"
+        }
+      },
+      {
+        "function_ancestry": {
+          "function_id": "11b3071e-e719-4459-b1c4-d3dd2d55aac0",
+          "function_name": "react_agent",
+          "parent_id": "1e4d2655-d4ef-46ef-b2a1-2c188e43602b",
+          "parent_name": "root"
+        },
+        "payload": {
+          "event_type": "LLM_END",
+          "event_timestamp": 1747566911.2542317,
+          "span_event_timestamp": 1747566909.8584313,
+          "framework": "langchain",
+          "name": "meta/llama-3.1-70b-instruct",
+          "tags": null,
+          "metadata": {
+            "chat_responses": [
+              {
+                "text": "Thought: I still haven't found any information about LangSmith's evaluation features. I'll try one more time.\nAction: doca_documents\nAction Input: {'query': \"LangSmith evaluation features purpose DOCA GPUNetIO\"}",
+                "generation_info": null,
+                "type": "ChatGenerationChunk",
+                "message": {
+                  "content": "Thought: I still haven't found any information about LangSmith's evaluation features. I'll try one more time.\nAction: doca_documents\nAction Input: {'query': \"LangSmith evaluation features purpose DOCA GPUNetIO\"}",
+                  "additional_kwargs": {},
+                  "response_metadata": {
+                    "finish_reason": "stop",
+                    "model_name": "meta/llama-3.1-70b-instruct"
+                  },
+                  "type": "AIMessageChunk",
+                  "name": null,
+                  "id": "run--1e4d2655-d4ef-46ef-b2a1-2c188e43602b"
+                }
+              }
+            ],
+            "chat_inputs": null,
+            "tool_inputs": null,
+            "tool_outputs": null,
+            "tool_info": null,
+            "span_inputs": null,
+            "span_outputs": null,
+            "provided_metadata": null
+          },
+          "data": {
+            "input": "DOCA GPUNetIO enables GPU-centric solutions that remove the CPU from the critical path by providing the following features:\n   GPUDirect Async Kernel-Initiated Network (GDAKIN) communications – a CUDA kernel can invoke GPUNetIO device functions to receive or send, directly interacting with the NIC\n       CPU intervention is not needed in the application critical path\n   GPUDirect RDMA – receive packets directly into a contiguous GPU memory​ area\n\nMany DOCA applications combine the functionality of more than one DOCA library and offer an example implementation for common scenarios of interest to users such as application recognition according to incoming/outgoing traffic, scanning files using the hardware RegEx acceleration, and much more.\nFor more information about DOCA applications, refer to DOCA Applications.\n\nAlternatively, DOCA offers the ability to map GPU memory through the dmabuf providing a set high-level functions. Prerequisites are DOCA installed on a system with:\n    Linux Kernel ≥ 6.2\n    libibverbs ≥ 1.14.44\n    CUDA Toolkit installed with the -m=kernel-open flag (which implies the NVIDIA driver in Open Source mode)\n\nFor this reason, DOCA GPUNetIO is composed of two libraries:\n   libdoca_gpunetio with functions invoked by CPU to prepare the GPU, allocate memory and objects\n   libdoca_gpunetio_device with functions invoked by GPU within CUDA kernels during the data path",
+            "output": "Thought: I still haven't found any information about LangSmith's evaluation features. I'll try one more time.\nAction: doca_documents\nAction Input: {'query': \"LangSmith evaluation features purpose DOCA GPUNetIO\"}",
+            "chunk": null
+          },
+          "usage_info": {
+            "token_usage": {
+              "prompt_tokens": 61700,
+              "completion_tokens": 1224,
+              "total_tokens": 62924
+            },
+            "num_llm_calls": 0,
+            "seconds_between_calls": 0
+          },
+          "UUID": "1e4d2655-d4ef-46ef-b2a1-2c188e43602b"
+        }
+      },
+      {
+        "function_ancestry": {
+          "function_id": "b6c90825-bd95-4115-a211-c207ff365410",
+          "function_name": "z_find_plans",
+          "parent_id": "9c7b9fe2-8a33-46f0-80f2-fa8faa0ece22",
+          "parent_name": "react_agent"
+        },
+        "payload": {
+          "event_type": "TOOL_END",
+          "event_timestamp": 1747566911.8787613,
+          "span_event_timestamp": 1747566911.258367,
+          "framework": "langchain",
+          "name": "text_file_ingest",
+          "tags": null,
+          "metadata": {
+            "chat_responses": null,
+            "chat_inputs": null,
+            "tool_inputs": null,
+            "tool_outputs": "For this reason, DOCA GPUNetIO is composed of two libraries:\n   libdoca_gpunetio with functions invoked by CPU to prepare the GPU, allocate memory and objects\n   libdoca_gpunetio_device with functions invoked by GPU within CUDA kernels during the data path\n\nHere are the DOCA GPUNetIO features enabled in the current release:\n\nDOCA GPUNetIO enables GPU-centric solutions that remove the CPU from the critical path by providing the following features:\n   GPUDirect Async Kernel-Initiated Network (GDAKIN) communications – a CUDA kernel can invoke GPUNetIO device functions to receive or send, directly interacting with the NIC\n       CPU intervention is not needed in the application critical path\n   GPUDirect RDMA – receive packets directly into a contiguous GPU memory​ area\n\nMorpheus and Aerial 5G SDK are examples of NVIDIA applications actively using DOCA GPUNetIO.\n\nFor a deep dive into the technology and motivations, please refer to the NVIDIA Blog post Inline GPU Packet Processing with NVIDIA DOCA GPUNetIO. A second NVIDIA blog post Realizing the Power of Real-Time Network Processing with NVIDIA DOCA GPUNetIO has been published to provide more example use-cases where DOCA GPUNetIO has been useful to improve the execution.\nSystem Configuration",
+            "tool_info": null,
+            "span_inputs": null,
+            "span_outputs": null,
+            "provided_metadata": null
+          },
+          "data": {
+            "input": "LangSmith evaluation features purpose DOCA GPUNetIO",
+            "output": "For this reason, DOCA GPUNetIO is composed of two libraries:\n   libdoca_gpunetio with functions invoked by CPU to prepare the GPU, allocate memory and objects\n   libdoca_gpunetio_device with functions invoked by GPU within CUDA kernels during the data path\n\nHere are the DOCA GPUNetIO features enabled in the current release:\n\nDOCA GPUNetIO enables GPU-centric solutions that remove the CPU from the critical path by providing the following features:\n   GPUDirect Async Kernel-Initiated Network (GDAKIN) communications – a CUDA kernel can invoke GPUNetIO device functions to receive or send, directly interacting with the NIC\n       CPU intervention is not needed in the application critical path\n   GPUDirect RDMA – receive packets directly into a contiguous GPU memory​ area\n\nMorpheus and Aerial 5G SDK are examples of NVIDIA applications actively using DOCA GPUNetIO.\n\nFor a deep dive into the technology and motivations, please refer to the NVIDIA Blog post Inline GPU Packet Processing with NVIDIA DOCA GPUNetIO. A second NVIDIA blog post Realizing the Power of Real-Time Network Processing with NVIDIA DOCA GPUNetIO has been published to provide more example use-cases where DOCA GPUNetIO has been useful to improve the execution.\nSystem Configuration",
+            "chunk": null
+          },
+          "usage_info": {
+            "token_usage": {
+              "prompt_tokens": 0,
+              "completion_tokens": 0,
+              "total_tokens": 0
+            },
+            "num_llm_calls": 0,
+            "seconds_between_calls": 0
+          },
+          "UUID": "9c7b9fe2-8a33-46f0-80f2-fa8faa0ece22"
+        }
+      },
+      {
+        "function_ancestry": {
+          "function_id": "11b3071e-e719-4459-b1c4-d3dd2d55aac0",
+          "function_name": "react_agent",
+          "parent_id": "f7979cea-8b06-449b-a236-3cd3b5519f98",
+          "parent_name": "root"
+        },
+        "payload": {
+          "event_type": "TOOL_END",
+          "event_timestamp": 1747566911.8793974,
+          "span_event_timestamp": 1747566911.2570584,
+          "framework": "langchain",
+          "name": "doca_documents",
+          "tags": null,
+          "metadata": {
+            "chat_responses": null,
+            "chat_inputs": null,
+            "tool_inputs": null,
+            "tool_outputs": "For this reason, DOCA GPUNetIO is composed of two libraries:\n   libdoca_gpunetio with functions invoked by CPU to prepare the GPU, allocate memory and objects\n   libdoca_gpunetio_device with functions invoked by GPU within CUDA kernels during the data path\n\nHere are the DOCA GPUNetIO features enabled in the current release:\n\nDOCA GPUNetIO enables GPU-centric solutions that remove the CPU from the critical path by providing the following features:\n   GPUDirect Async Kernel-Initiated Network (GDAKIN) communications – a CUDA kernel can invoke GPUNetIO device functions to receive or send, directly interacting with the NIC\n       CPU intervention is not needed in the application critical path\n   GPUDirect RDMA – receive packets directly into a contiguous GPU memory​ area\n\nMorpheus and Aerial 5G SDK are examples of NVIDIA applications actively using DOCA GPUNetIO.\n\nFor a deep dive into the technology and motivations, please refer to the NVIDIA Blog post Inline GPU Packet Processing with NVIDIA DOCA GPUNetIO. A second NVIDIA blog post Realizing the Power of Real-Time Network Processing with NVIDIA DOCA GPUNetIO has been published to provide more example use-cases where DOCA GPUNetIO has been useful to improve the execution.\nSystem Configuration",
+            "tool_info": null,
+            "span_inputs": null,
+            "span_outputs": null,
+            "provided_metadata": null
+          },
+          "data": {
+            "input": "{'query': 'LangSmith evaluation features purpose DOCA GPUNetIO'}",
+            "output": "For this reason, DOCA GPUNetIO is composed of two libraries:\n   libdoca_gpunetio with functions invoked by CPU to prepare the GPU, allocate memory and objects\n   libdoca_gpunetio_device with functions invoked by GPU within CUDA kernels during the data path\n\nHere are the DOCA GPUNetIO features enabled in the current release:\n\nDOCA GPUNetIO enables GPU-centric solutions that remove the CPU from the critical path by providing the following features:\n   GPUDirect Async Kernel-Initiated Network (GDAKIN) communications – a CUDA kernel can invoke GPUNetIO device functions to receive or send, directly interacting with the NIC\n       CPU intervention is not needed in the application critical path\n   GPUDirect RDMA – receive packets directly into a contiguous GPU memory​ area\n\nMorpheus and Aerial 5G SDK are examples of NVIDIA applications actively using DOCA GPUNetIO.\n\nFor a deep dive into the technology and motivations, please refer to the NVIDIA Blog post Inline GPU Packet Processing with NVIDIA DOCA GPUNetIO. A second NVIDIA blog post Realizing the Power of Real-Time Network Processing with NVIDIA DOCA GPUNetIO has been published to provide more example use-cases where DOCA GPUNetIO has been useful to improve the execution.\nSystem Configuration",
+            "chunk": null
+          },
+          "usage_info": {
+            "token_usage": {
+              "prompt_tokens": 0,
+              "completion_tokens": 0,
+              "total_tokens": 0
+            },
+            "num_llm_calls": 0,
+            "seconds_between_calls": 0
+          },
+          "UUID": "f7979cea-8b06-449b-a236-3cd3b5519f98"
+        }
+      },
+      {
+        "function_ancestry": {
+          "function_id": "11b3071e-e719-4459-b1c4-d3dd2d55aac0",
+          "function_name": "react_agent",
+          "parent_id": "5c3e424a-176c-4c62-be9d-8450e2659ec6",
+          "parent_name": "root"
+        },
+        "payload": {
+          "event_type": "LLM_END",
+          "event_timestamp": 1747566913.2133548,
+          "span_event_timestamp": 1747566911.882831,
+          "framework": "langchain",
+          "name": "meta/llama-3.1-70b-instruct",
+          "tags": null,
+          "metadata": {
+            "chat_responses": [
+              {
+                "text": "Thought: I have tried multiple times, but I still haven't found any information about LangSmith's evaluation features. I think I have exhausted all possibilities.\nFinal Answer: Unfortunately, I couldn't find any information about LangSmith's evaluation features in the provided texts.",
+                "generation_info": null,
+                "type": "ChatGenerationChunk",
+                "message": {
+                  "content": "Thought: I have tried multiple times, but I still haven't found any information about LangSmith's evaluation features. I think I have exhausted all possibilities.\nFinal Answer: Unfortunately, I couldn't find any information about LangSmith's evaluation features in the provided texts.",
+                  "additional_kwargs": {},
+                  "response_metadata": {
+                    "finish_reason": "stop",
+                    "model_name": "meta/llama-3.1-70b-instruct"
+                  },
+                  "type": "AIMessageChunk",
+                  "name": null,
+                  "id": "run--5c3e424a-176c-4c62-be9d-8450e2659ec6"
+                }
+              }
+            ],
+            "chat_inputs": null,
+            "tool_inputs": null,
+            "tool_outputs": null,
+            "tool_info": null,
+            "span_inputs": null,
+            "span_outputs": null,
+            "provided_metadata": null
+          },
+          "data": {
+            "input": "For this reason, DOCA GPUNetIO is composed of two libraries:\n   libdoca_gpunetio with functions invoked by CPU to prepare the GPU, allocate memory and objects\n   libdoca_gpunetio_device with functions invoked by GPU within CUDA kernels during the data path\n\nHere are the DOCA GPUNetIO features enabled in the current release:\n\nDOCA GPUNetIO enables GPU-centric solutions that remove the CPU from the critical path by providing the following features:\n   GPUDirect Async Kernel-Initiated Network (GDAKIN) communications – a CUDA kernel can invoke GPUNetIO device functions to receive or send, directly interacting with the NIC\n       CPU intervention is not needed in the application critical path\n   GPUDirect RDMA – receive packets directly into a contiguous GPU memory​ area\n\nMorpheus and Aerial 5G SDK are examples of NVIDIA applications actively using DOCA GPUNetIO.\n\nFor a deep dive into the technology and motivations, please refer to the NVIDIA Blog post Inline GPU Packet Processing with NVIDIA DOCA GPUNetIO. A second NVIDIA blog post Realizing the Power of Real-Time Network Processing with NVIDIA DOCA GPUNetIO has been published to provide more example use-cases where DOCA GPUNetIO has been useful to improve the execution.\nSystem Configuration",
+            "output": "Thought: I have tried multiple times, but I still haven't found any information about LangSmith's evaluation features. I think I have exhausted all possibilities.\nFinal Answer: Unfortunately, I couldn't find any information about LangSmith's evaluation features in the provided texts.",
+            "chunk": null
+          },
+          "usage_info": {
+            "token_usage": {
+              "prompt_tokens": 86185,
+              "completion_tokens": 1484,
+              "total_tokens": 87669
+            },
+            "num_llm_calls": 0,
+            "seconds_between_calls": 0
+          },
+          "UUID": "5c3e424a-176c-4c62-be9d-8450e2659ec6"
+        }
+      }
+    ],
+    "expected_intermediate_steps": []
+  },
+  {
+    "id": 4,
+    "question": "How does LangSmith support prompt engineering?",
+    "answer": "LangSmith provides tools for prompt engineering that help you find the perfect prompt for your application. You can create prompts, iterate on models and prompts using the Playground, and manage prompts programmatically in your application.",
+    "generated_answer": "Unfortunately, I couldn't find any information about LangSmith's support for prompt engineering.",
+    "intermediate_steps": [
+      {
+        "function_ancestry": {
+          "function_id": "2763765f-ff06-4c3f-8793-72d84fe34752",
+          "function_name": "react_agent",
+          "parent_id": "b8676d8e-945f-41d9-89ae-15b9dd226fc5",
+          "parent_name": "root"
+        },
+        "payload": {
+          "event_type": "LLM_END",
+          "event_timestamp": 1747566905.500521,
+          "span_event_timestamp": 1747566904.1438806,
+          "framework": "langchain",
+          "name": "meta/llama-3.1-70b-instruct",
+          "tags": null,
+          "metadata": {
+            "chat_responses": [
+              {
+                "text": "Thought: LangSmith is an AI tool that supports prompt engineering, but I need to know more about its features and capabilities to provide a detailed answer.\n\nAction: doca_documents\nAction Input: {\"query\": \"LangSmith prompt engineering features\"}\n\n",
+                "generation_info": null,
+                "type": "ChatGenerationChunk",
+                "message": {
+                  "content": "Thought: LangSmith is an AI tool that supports prompt engineering, but I need to know more about its features and capabilities to provide a detailed answer.\n\nAction: doca_documents\nAction Input: {\"query\": \"LangSmith prompt engineering features\"}\n\n",
+                  "additional_kwargs": {},
+                  "response_metadata": {
+                    "finish_reason": "stop",
+                    "model_name": "meta/llama-3.1-70b-instruct"
+                  },
+                  "type": "AIMessageChunk",
+                  "name": null,
+                  "id": "run--b8676d8e-945f-41d9-89ae-15b9dd226fc5"
+                }
+              }
+            ],
+            "chat_inputs": null,
+            "tool_inputs": null,
+            "tool_outputs": null,
+            "tool_info": null,
+            "span_inputs": null,
+            "span_outputs": null,
+            "provided_metadata": null
+          },
+          "data": {
+            "input": "\nQuestion: How does LangSmith support prompt engineering?\n",
+            "output": "Thought: LangSmith is an AI tool that supports prompt engineering, but I need to know more about its features and capabilities to provide a detailed answer.\n\nAction: doca_documents\nAction Input: {\"query\": \"LangSmith prompt engineering features\"}\n\n",
+            "chunk": null
+          },
+          "usage_info": {
+            "token_usage": {
+              "prompt_tokens": 18497,
+              "completion_tokens": 1378,
+              "total_tokens": 19875
+            },
+            "num_llm_calls": 0,
+            "seconds_between_calls": 0
+          },
+          "UUID": "b8676d8e-945f-41d9-89ae-15b9dd226fc5"
+        }
+      },
+      {
+        "function_ancestry": {
+          "function_id": "72f9aecb-a1c0-4048-94e6-e2c3b6bcf51c",
+          "function_name": "z_find_plans",
+          "parent_id": "107b46cb-70ab-4d8c-b40f-3172445a3d05",
+          "parent_name": "react_agent"
+        },
+        "payload": {
+          "event_type": "TOOL_END",
+          "event_timestamp": 1747566906.789556,
+          "span_event_timestamp": 1747566905.5041285,
+          "framework": "langchain",
+          "name": "text_file_ingest",
+          "tags": null,
+          "metadata": {
+            "chat_responses": null,
+            "chat_inputs": null,
+            "tool_inputs": null,
+            "tool_outputs": "CPU intervention is not needed in the application critical path\n   GPUDirect RDMA – receive packets directly into a contiguous GPU memory​ area\n   Semaphores – provide a standardized I/O communication protocol between the receiving entity and the CUDA kernel real-time packet processing​\n   Smart memory allocation – allocate aligned GPU memory buffers exposing them to direct CPU access\n\nSmart memory allocation – allocate aligned GPU memory buffers exposing them to direct CPU access\n       Combination of CUDA and DPDK gpudev library (which requires the GDRCopy library) already embedded in the DPDK released with DOCA\n   Ethernet protocol management on GPU\n\nor HPE). Alternatively, it is also possible to disable it via command line, but it may not be as effective as the BIOS option. Assuming system topology Option 2, with a converged accelerator DPU as follows:\n\nTools",
+            "tool_info": null,
+            "span_inputs": null,
+            "span_outputs": null,
+            "provided_metadata": null
+          },
+          "data": {
+            "input": "LangSmith prompt engineering features",
+            "output": "CPU intervention is not needed in the application critical path\n   GPUDirect RDMA – receive packets directly into a contiguous GPU memory​ area\n   Semaphores – provide a standardized I/O communication protocol between the receiving entity and the CUDA kernel real-time packet processing​\n   Smart memory allocation – allocate aligned GPU memory buffers exposing them to direct CPU access\n\nSmart memory allocation – allocate aligned GPU memory buffers exposing them to direct CPU access\n       Combination of CUDA and DPDK gpudev library (which requires the GDRCopy library) already embedded in the DPDK released with DOCA\n   Ethernet protocol management on GPU\n\nor HPE). Alternatively, it is also possible to disable it via command line, but it may not be as effective as the BIOS option. Assuming system topology Option 2, with a converged accelerator DPU as follows:\n\nTools",
+            "chunk": null
+          },
+          "usage_info": {
+            "token_usage": {
+              "prompt_tokens": 0,
+              "completion_tokens": 0,
+              "total_tokens": 0
+            },
+            "num_llm_calls": 0,
+            "seconds_between_calls": 0
+          },
+          "UUID": "107b46cb-70ab-4d8c-b40f-3172445a3d05"
+        }
+      },
+      {
+        "function_ancestry": {
+          "function_id": "2763765f-ff06-4c3f-8793-72d84fe34752",
+          "function_name": "react_agent",
+          "parent_id": "eb043d85-0401-482c-8a96-516e13c4638d",
+          "parent_name": "root"
+        },
+        "payload": {
+          "event_type": "TOOL_END",
+          "event_timestamp": 1747566906.790175,
+          "span_event_timestamp": 1747566905.5031803,
+          "framework": "langchain",
+          "name": "doca_documents",
+          "tags": null,
+          "metadata": {
+            "chat_responses": null,
+            "chat_inputs": null,
+            "tool_inputs": null,
+            "tool_outputs": "CPU intervention is not needed in the application critical path\n   GPUDirect RDMA – receive packets directly into a contiguous GPU memory​ area\n   Semaphores – provide a standardized I/O communication protocol between the receiving entity and the CUDA kernel real-time packet processing​\n   Smart memory allocation – allocate aligned GPU memory buffers exposing them to direct CPU access\n\nSmart memory allocation – allocate aligned GPU memory buffers exposing them to direct CPU access\n       Combination of CUDA and DPDK gpudev library (which requires the GDRCopy library) already embedded in the DPDK released with DOCA\n   Ethernet protocol management on GPU\n\nor HPE). Alternatively, it is also possible to disable it via command line, but it may not be as effective as the BIOS option. Assuming system topology Option 2, with a converged accelerator DPU as follows:\n\nTools",
+            "tool_info": null,
+            "span_inputs": null,
+            "span_outputs": null,
+            "provided_metadata": null
+          },
+          "data": {
+            "input": "{'query': 'LangSmith prompt engineering features'}",
+            "output": "CPU intervention is not needed in the application critical path\n   GPUDirect RDMA – receive packets directly into a contiguous GPU memory​ area\n   Semaphores – provide a standardized I/O communication protocol between the receiving entity and the CUDA kernel real-time packet processing​\n   Smart memory allocation – allocate aligned GPU memory buffers exposing them to direct CPU access\n\nSmart memory allocation – allocate aligned GPU memory buffers exposing them to direct CPU access\n       Combination of CUDA and DPDK gpudev library (which requires the GDRCopy library) already embedded in the DPDK released with DOCA\n   Ethernet protocol management on GPU\n\nor HPE). Alternatively, it is also possible to disable it via command line, but it may not be as effective as the BIOS option. Assuming system topology Option 2, with a converged accelerator DPU as follows:\n\nTools",
+            "chunk": null
+          },
+          "usage_info": {
+            "token_usage": {
+              "prompt_tokens": 0,
+              "completion_tokens": 0,
+              "total_tokens": 0
+            },
+            "num_llm_calls": 0,
+            "seconds_between_calls": 0
+          },
+          "UUID": "eb043d85-0401-482c-8a96-516e13c4638d"
+        }
+      },
+      {
+        "function_ancestry": {
+          "function_id": "2763765f-ff06-4c3f-8793-72d84fe34752",
+          "function_name": "react_agent",
+          "parent_id": "5dbd4d39-ea89-4ba2-8b1f-25d6cf0df390",
+          "parent_name": "root"
+        },
+        "payload": {
+          "event_type": "LLM_END",
+          "event_timestamp": 1747566908.480418,
+          "span_event_timestamp": 1747566906.7948816,
+          "framework": "langchain",
+          "name": "meta/llama-3.1-70b-instruct",
+          "tags": null,
+          "metadata": {
+            "chat_responses": [
+              {
+                "text": "Thought: The provided text seems to be related to GPUDirect RDMA, semaphores, smart memory allocation, and Ethernet protocol management on GPU, but it doesn't directly answer the question about LangSmith's support for prompt engineering. I need to try again.\n\nAction: doca_documents\nAction Input: {\"query\": \"LangSmith prompt engineering support\"}",
+                "generation_info": null,
+                "type": "ChatGenerationChunk",
+                "message": {
+                  "content": "Thought: The provided text seems to be related to GPUDirect RDMA, semaphores, smart memory allocation, and Ethernet protocol management on GPU, but it doesn't directly answer the question about LangSmith's support for prompt engineering. I need to try again.\n\nAction: doca_documents\nAction Input: {\"query\": \"LangSmith prompt engineering support\"}",
+                  "additional_kwargs": {},
+                  "response_metadata": {
+                    "finish_reason": "stop",
+                    "model_name": "meta/llama-3.1-70b-instruct"
+                  },
+                  "type": "AIMessageChunk",
+                  "name": null,
+                  "id": "run--5dbd4d39-ea89-4ba2-8b1f-25d6cf0df390"
+                }
+              }
+            ],
+            "chat_inputs": null,
+            "tool_inputs": null,
+            "tool_outputs": null,
+            "tool_info": null,
+            "span_inputs": null,
+            "span_outputs": null,
+            "provided_metadata": null
+          },
+          "data": {
+            "input": "CPU intervention is not needed in the application critical path\n   GPUDirect RDMA – receive packets directly into a contiguous GPU memory​ area\n   Semaphores – provide a standardized I/O communication protocol between the receiving entity and the CUDA kernel real-time packet processing​\n   Smart memory allocation – allocate aligned GPU memory buffers exposing them to direct CPU access\n\nSmart memory allocation – allocate aligned GPU memory buffers exposing them to direct CPU access\n       Combination of CUDA and DPDK gpudev library (which requires the GDRCopy library) already embedded in the DPDK released with DOCA\n   Ethernet protocol management on GPU\n\nor HPE). Alternatively, it is also possible to disable it via command line, but it may not be as effective as the BIOS option. Assuming system topology Option 2, with a converged accelerator DPU as follows:\n\nTools",
+            "output": "Thought: The provided text seems to be related to GPUDirect RDMA, semaphores, smart memory allocation, and Ethernet protocol management on GPU, but it doesn't directly answer the question about LangSmith's support for prompt engineering. I need to try again.\n\nAction: doca_documents\nAction Input: {\"query\": \"LangSmith prompt engineering support\"}",
+            "chunk": null
+          },
+          "usage_info": {
+            "token_usage": {
+              "prompt_tokens": 43425,
+              "completion_tokens": 2774,
+              "total_tokens": 46199
+            },
+            "num_llm_calls": 0,
+            "seconds_between_calls": 0
+          },
+          "UUID": "5dbd4d39-ea89-4ba2-8b1f-25d6cf0df390"
+        }
+      },
+      {
+        "function_ancestry": {
+          "function_id": "2788a2d7-3d41-4eb6-9263-3f26bf47dc0a",
+          "function_name": "z_find_plans",
+          "parent_id": "6a5f2fbe-b9c9-4630-ab95-0e29abc10798",
+          "parent_name": "react_agent"
+        },
+        "payload": {
+          "event_type": "TOOL_END",
+          "event_timestamp": 1747566909.044702,
+          "span_event_timestamp": 1747566908.4843864,
+          "framework": "langchain",
+          "name": "text_file_ingest",
+          "tags": null,
+          "metadata": {
+            "chat_responses": null,
+            "chat_inputs": null,
+            "tool_inputs": null,
+            "tool_outputs": "Tools\n\nNote\n\nFor questions, comments, and feedback, please contact us at DOCA-Feedback@exchange.nvidia.com\n\nor HPE). Alternatively, it is also possible to disable it via command line, but it may not be as effective as the BIOS option. Assuming system topology Option 2, with a converged accelerator DPU as follows:\n\nApplications",
+            "tool_info": null,
+            "span_inputs": null,
+            "span_outputs": null,
+            "provided_metadata": null
+          },
+          "data": {
+            "input": "LangSmith prompt engineering support",
+            "output": "Tools\n\nNote\n\nFor questions, comments, and feedback, please contact us at DOCA-Feedback@exchange.nvidia.com\n\nor HPE). Alternatively, it is also possible to disable it via command line, but it may not be as effective as the BIOS option. Assuming system topology Option 2, with a converged accelerator DPU as follows:\n\nApplications",
+            "chunk": null
+          },
+          "usage_info": {
+            "token_usage": {
+              "prompt_tokens": 0,
+              "completion_tokens": 0,
+              "total_tokens": 0
+            },
+            "num_llm_calls": 0,
+            "seconds_between_calls": 0
+          },
+          "UUID": "6a5f2fbe-b9c9-4630-ab95-0e29abc10798"
+        }
+      },
+      {
+        "function_ancestry": {
+          "function_id": "2763765f-ff06-4c3f-8793-72d84fe34752",
+          "function_name": "react_agent",
+          "parent_id": "d3d10d80-d662-447f-b500-6935547bd0cd",
+          "parent_name": "root"
+        },
+        "payload": {
+          "event_type": "TOOL_END",
+          "event_timestamp": 1747566909.0452769,
+          "span_event_timestamp": 1747566908.483253,
+          "framework": "langchain",
+          "name": "doca_documents",
+          "tags": null,
+          "metadata": {
+            "chat_responses": null,
+            "chat_inputs": null,
+            "tool_inputs": null,
+            "tool_outputs": "Tools\n\nNote\n\nFor questions, comments, and feedback, please contact us at DOCA-Feedback@exchange.nvidia.com\n\nor HPE). Alternatively, it is also possible to disable it via command line, but it may not be as effective as the BIOS option. Assuming system topology Option 2, with a converged accelerator DPU as follows:\n\nApplications",
+            "tool_info": null,
+            "span_inputs": null,
+            "span_outputs": null,
+            "provided_metadata": null
+          },
+          "data": {
+            "input": "{'query': 'LangSmith prompt engineering support'}",
+            "output": "Tools\n\nNote\n\nFor questions, comments, and feedback, please contact us at DOCA-Feedback@exchange.nvidia.com\n\nor HPE). Alternatively, it is also possible to disable it via command line, but it may not be as effective as the BIOS option. Assuming system topology Option 2, with a converged accelerator DPU as follows:\n\nApplications",
+            "chunk": null
+          },
+          "usage_info": {
+            "token_usage": {
+              "prompt_tokens": 0,
+              "completion_tokens": 0,
+              "total_tokens": 0
+            },
+            "num_llm_calls": 0,
+            "seconds_between_calls": 0
+          },
+          "UUID": "d3d10d80-d662-447f-b500-6935547bd0cd"
+        }
+      },
+      {
+        "function_ancestry": {
+          "function_id": "2763765f-ff06-4c3f-8793-72d84fe34752",
+          "function_name": "react_agent",
+          "parent_id": "bcece379-d656-41a7-ab2b-3090ccc6a493",
+          "parent_name": "root"
+        },
+        "payload": {
+          "event_type": "LLM_END",
+          "event_timestamp": 1747566910.5743098,
+          "span_event_timestamp": 1747566909.0483184,
+          "framework": "langchain",
+          "name": "meta/llama-3.1-70b-instruct",
+          "tags": null,
+          "metadata": {
+            "chat_responses": [
+              {
+                "text": "Thought: The provided text is not relevant to the question about LangSmith's support for prompt engineering. It seems to be related to DOCA and GPUDirect RDMA, but it doesn't provide any information about LangSmith. I need to try again.\n\nAction: doca_documents\nAction Input: {\"query\": \"LangSmith prompt engineering capabilities\"}",
+                "generation_info": null,
+                "type": "ChatGenerationChunk",
+                "message": {
+                  "content": "Thought: The provided text is not relevant to the question about LangSmith's support for prompt engineering. It seems to be related to DOCA and GPUDirect RDMA, but it doesn't provide any information about LangSmith. I need to try again.\n\nAction: doca_documents\nAction Input: {\"query\": \"LangSmith prompt engineering capabilities\"}",
+                  "additional_kwargs": {},
+                  "response_metadata": {
+                    "finish_reason": "stop",
+                    "model_name": "meta/llama-3.1-70b-instruct"
+                  },
+                  "type": "AIMessageChunk",
+                  "name": null,
+                  "id": "run--bcece379-d656-41a7-ab2b-3090ccc6a493"
+                }
+              }
+            ],
+            "chat_inputs": null,
+            "tool_inputs": null,
+            "tool_outputs": null,
+            "tool_info": null,
+            "span_inputs": null,
+            "span_outputs": null,
+            "provided_metadata": null
+          },
+          "data": {
+            "input": "Tools\n\nNote\n\nFor questions, comments, and feedback, please contact us at DOCA-Feedback@exchange.nvidia.com\n\nor HPE). Alternatively, it is also possible to disable it via command line, but it may not be as effective as the BIOS option. Assuming system topology Option 2, with a converged accelerator DPU as follows:\n\nApplications",
+            "output": "Thought: The provided text is not relevant to the question about LangSmith's support for prompt engineering. It seems to be related to DOCA and GPUDirect RDMA, but it doesn't provide any information about LangSmith. I need to try again.\n\nAction: doca_documents\nAction Input: {\"query\": \"LangSmith prompt engineering capabilities\"}",
+            "chunk": null
+          },
+          "usage_info": {
+            "token_usage": {
+              "prompt_tokens": 53582,
+              "completion_tokens": 2627,
+              "total_tokens": 56209
+            },
+            "num_llm_calls": 0,
+            "seconds_between_calls": 0
+          },
+          "UUID": "bcece379-d656-41a7-ab2b-3090ccc6a493"
+        }
+      },
+      {
+        "function_ancestry": {
+          "function_id": "d9372adc-43e9-4a16-ab05-ac0bc55c677d",
+          "function_name": "z_find_plans",
+          "parent_id": "a672a732-7205-4012-b9e3-6f4612c9a46c",
+          "parent_name": "react_agent"
+        },
+        "payload": {
+          "event_type": "TOOL_END",
+          "event_timestamp": 1747566911.14085,
+          "span_event_timestamp": 1747566910.5790546,
+          "framework": "langchain",
+          "name": "text_file_ingest",
+          "tags": null,
+          "metadata": {
+            "chat_responses": null,
+            "chat_inputs": null,
+            "tool_inputs": null,
+            "tool_outputs": "Tools\n\nApplications\n\nNote\n\nor HPE). Alternatively, it is also possible to disable it via command line, but it may not be as effective as the BIOS option. Assuming system topology Option 2, with a converged accelerator DPU as follows:",
+            "tool_info": null,
+            "span_inputs": null,
+            "span_outputs": null,
+            "provided_metadata": null
+          },
+          "data": {
+            "input": "LangSmith prompt engineering capabilities",
+            "output": "Tools\n\nApplications\n\nNote\n\nor HPE). Alternatively, it is also possible to disable it via command line, but it may not be as effective as the BIOS option. Assuming system topology Option 2, with a converged accelerator DPU as follows:",
+            "chunk": null
+          },
+          "usage_info": {
+            "token_usage": {
+              "prompt_tokens": 0,
+              "completion_tokens": 0,
+              "total_tokens": 0
+            },
+            "num_llm_calls": 0,
+            "seconds_between_calls": 0
+          },
+          "UUID": "a672a732-7205-4012-b9e3-6f4612c9a46c"
+        }
+      },
+      {
+        "function_ancestry": {
+          "function_id": "2763765f-ff06-4c3f-8793-72d84fe34752",
+          "function_name": "react_agent",
+          "parent_id": "395ebce9-6ef7-4d9f-ab17-38e095c39853",
+          "parent_name": "root"
+        },
+        "payload": {
+          "event_type": "TOOL_END",
+          "event_timestamp": 1747566911.1415029,
+          "span_event_timestamp": 1747566910.5776927,
+          "framework": "langchain",
+          "name": "doca_documents",
+          "tags": null,
+          "metadata": {
+            "chat_responses": null,
+            "chat_inputs": null,
+            "tool_inputs": null,
+            "tool_outputs": "Tools\n\nApplications\n\nNote\n\nor HPE). Alternatively, it is also possible to disable it via command line, but it may not be as effective as the BIOS option. Assuming system topology Option 2, with a converged accelerator DPU as follows:",
+            "tool_info": null,
+            "span_inputs": null,
+            "span_outputs": null,
+            "provided_metadata": null
+          },
+          "data": {
+            "input": "{'query': 'LangSmith prompt engineering capabilities'}",
+            "output": "Tools\n\nApplications\n\nNote\n\nor HPE). Alternatively, it is also possible to disable it via command line, but it may not be as effective as the BIOS option. Assuming system topology Option 2, with a converged accelerator DPU as follows:",
+            "chunk": null
+          },
+          "usage_info": {
+            "token_usage": {
+              "prompt_tokens": 0,
+              "completion_tokens": 0,
+              "total_tokens": 0
+            },
+            "num_llm_calls": 0,
+            "seconds_between_calls": 0
+          },
+          "UUID": "395ebce9-6ef7-4d9f-ab17-38e095c39853"
+        }
+      },
+      {
+        "function_ancestry": {
+          "function_id": "2763765f-ff06-4c3f-8793-72d84fe34752",
+          "function_name": "react_agent",
+          "parent_id": "364c032b-9cea-49f7-bef1-61f9e4cdd32b",
+          "parent_name": "root"
+        },
+        "payload": {
+          "event_type": "LLM_END",
+          "event_timestamp": 1747566915.3864887,
+          "span_event_timestamp": 1747566911.1450734,
+          "framework": "langchain",
+          "name": "meta/llama-3.1-70b-instruct",
+          "tags": null,
+          "metadata": {
+            "chat_responses": [
+              {
+                "text": "Thought: I've tried searching for information about LangSmith's support for prompt engineering, but the provided text doesn't seem to be relevant. I'm not sure what else to do.\n\nFinal Answer: Unfortunately, I couldn't find any information about LangSmith's support for prompt engineering.",
+                "generation_info": null,
+                "type": "ChatGenerationChunk",
+                "message": {
+                  "content": "Thought: I've tried searching for information about LangSmith's support for prompt engineering, but the provided text doesn't seem to be relevant. I'm not sure what else to do.\n\nFinal Answer: Unfortunately, I couldn't find any information about LangSmith's support for prompt engineering.",
+                  "additional_kwargs": {},
+                  "response_metadata": {
+                    "finish_reason": "stop",
+                    "model_name": "meta/llama-3.1-70b-instruct"
+                  },
+                  "type": "AIMessageChunk",
+                  "name": null,
+                  "id": "run--364c032b-9cea-49f7-bef1-61f9e4cdd32b"
+                }
+              }
+            ],
+            "chat_inputs": null,
+            "tool_inputs": null,
+            "tool_outputs": null,
+            "tool_info": null,
+            "span_inputs": null,
+            "span_outputs": null,
+            "provided_metadata": null
+          },
+          "data": {
+            "input": "Tools\n\nApplications\n\nNote\n\nor HPE). Alternatively, it is also possible to disable it via command line, but it may not be as effective as the BIOS option. Assuming system topology Option 2, with a converged accelerator DPU as follows:",
+            "output": "Thought: I've tried searching for information about LangSmith's support for prompt engineering, but the provided text doesn't seem to be relevant. I'm not sure what else to do.\n\nFinal Answer: Unfortunately, I couldn't find any information about LangSmith's support for prompt engineering.",
+            "chunk": null
+          },
+          "usage_info": {
+            "token_usage": {
+              "prompt_tokens": 51094,
+              "completion_tokens": 1710,
+              "total_tokens": 52804
+            },
+            "num_llm_calls": 0,
+            "seconds_between_calls": 0
+          },
+          "UUID": "364c032b-9cea-49f7-bef1-61f9e4cdd32b"
+        }
+      }
+    ],
+    "expected_intermediate_steps": []
+  },
+  {
+    "id": 5,
+    "question": "Is LangSmith framework-specific or can it be used with any LLM application?",
+    "answer": "LangSmith is framework-agnostic and can be used with or without LangChain's open source frameworks. It can be integrated with any LLM application, though it offers specific integration options for LangChain and LangGraph users through environment variables.",
+    "generated_answer": "Invalid Format: Missing 'Action:' after 'Thought:'\n",
+    "intermediate_steps": [
+      {
+        "function_ancestry": {
+          "function_id": "1b9fbb8d-6c44-47be-b7a0-16b4b46a199b",
+          "function_name": "react_agent",
+          "parent_id": "f0f2c6a2-393c-4b9f-8c8a-285bf98af581",
+          "parent_name": "root"
+        },
+        "payload": {
+          "event_type": "LLM_END",
+          "event_timestamp": 1747566908.776053,
+          "span_event_timestamp": 1747566904.1444287,
+          "framework": "langchain",
+          "name": "meta/llama-3.1-70b-instruct",
+          "tags": null,
+          "metadata": {
+            "chat_responses": [
+              {
+                "text": "Thought: To answer this question, I need to search for information about LangSmith and its compatibility with different LLM applications.\n\nAction: doca_documents\nAction Input: {\"query\": \"LangSmith framework-specific LLM application\"}\n\n",
+                "generation_info": null,
+                "type": "ChatGenerationChunk",
+                "message": {
+                  "content": "Thought: To answer this question, I need to search for information about LangSmith and its compatibility with different LLM applications.\n\nAction: doca_documents\nAction Input: {\"query\": \"LangSmith framework-specific LLM application\"}\n\n",
+                  "additional_kwargs": {},
+                  "response_metadata": {
+                    "finish_reason": "stop",
+                    "model_name": "meta/llama-3.1-70b-instruct"
+                  },
+                  "type": "AIMessageChunk",
+                  "name": null,
+                  "id": "run--f0f2c6a2-393c-4b9f-8c8a-285bf98af581"
+                }
+              }
+            ],
+            "chat_inputs": null,
+            "tool_inputs": null,
+            "tool_outputs": null,
+            "tool_info": null,
+            "span_inputs": null,
+            "span_outputs": null,
+            "provided_metadata": null
+          },
+          "data": {
+            "input": "\nQuestion: Is LangSmith framework-specific or can it be used with any LLM application?\n",
+            "output": "Thought: To answer this question, I need to search for information about LangSmith and its compatibility with different LLM applications.\n\nAction: doca_documents\nAction Input: {\"query\": \"LangSmith framework-specific LLM application\"}\n\n",
+            "chunk": null
+          },
+          "usage_info": {
+            "token_usage": {
+              "prompt_tokens": 17850,
+              "completion_tokens": 1225,
+              "total_tokens": 19075
+            },
+            "num_llm_calls": 0,
+            "seconds_between_calls": 0
+          },
+          "UUID": "f0f2c6a2-393c-4b9f-8c8a-285bf98af581"
+        }
+      },
+      {
+        "function_ancestry": {
+          "function_id": "01b58343-8733-4f03-944b-cdc53de1b0de",
+          "function_name": "z_find_plans",
+          "parent_id": "f60a5949-d9dc-40a5-b407-bf3f3bcabcba",
+          "parent_name": "react_agent"
+        },
+        "payload": {
+          "event_type": "TOOL_END",
+          "event_timestamp": 1747566909.336107,
+          "span_event_timestamp": 1747566908.7805545,
+          "framework": "langchain",
+          "name": "text_file_ingest",
+          "tags": null,
+          "metadata": {
+            "chat_responses": null,
+            "chat_inputs": null,
+            "tool_inputs": null,
+            "tool_outputs": "Applications\n\nApplications are a higher-level reference code than the samples and demonstrate how a full DOCA-based program can be built. In addition to the supplied source code and compilation definitions, the applications are also shipped in their compiled binary form. This is to allow users an out-of-the-box interaction with DOCA-based programs without the hassle of a developer-oriented compilation process.\n\nFor a more detailed reference of full DOCA-based programs that make use of multiple DOCA libraries, please refer to the Reference Applications.\n\nThe following sections present an overview of possible GPU packet processing pipeline application layouts combining DOCA GPUNetIO building blocks.",
+            "tool_info": null,
+            "span_inputs": null,
+            "span_outputs": null,
+            "provided_metadata": null
+          },
+          "data": {
+            "input": "LangSmith framework-specific LLM application",
+            "output": "Applications\n\nApplications are a higher-level reference code than the samples and demonstrate how a full DOCA-based program can be built. In addition to the supplied source code and compilation definitions, the applications are also shipped in their compiled binary form. This is to allow users an out-of-the-box interaction with DOCA-based programs without the hassle of a developer-oriented compilation process.\n\nFor a more detailed reference of full DOCA-based programs that make use of multiple DOCA libraries, please refer to the Reference Applications.\n\nThe following sections present an overview of possible GPU packet processing pipeline application layouts combining DOCA GPUNetIO building blocks.",
+            "chunk": null
+          },
+          "usage_info": {
+            "token_usage": {
+              "prompt_tokens": 0,
+              "completion_tokens": 0,
+              "total_tokens": 0
+            },
+            "num_llm_calls": 0,
+            "seconds_between_calls": 0
+          },
+          "UUID": "f60a5949-d9dc-40a5-b407-bf3f3bcabcba"
+        }
+      },
+      {
+        "function_ancestry": {
+          "function_id": "1b9fbb8d-6c44-47be-b7a0-16b4b46a199b",
+          "function_name": "react_agent",
+          "parent_id": "e1071fbc-f305-4c2b-a9fe-3b8ed12eaf6b",
+          "parent_name": "root"
+        },
+        "payload": {
+          "event_type": "TOOL_END",
+          "event_timestamp": 1747566909.3366745,
+          "span_event_timestamp": 1747566908.7795074,
+          "framework": "langchain",
+          "name": "doca_documents",
+          "tags": null,
+          "metadata": {
+            "chat_responses": null,
+            "chat_inputs": null,
+            "tool_inputs": null,
+            "tool_outputs": "Applications\n\nApplications are a higher-level reference code than the samples and demonstrate how a full DOCA-based program can be built. In addition to the supplied source code and compilation definitions, the applications are also shipped in their compiled binary form. This is to allow users an out-of-the-box interaction with DOCA-based programs without the hassle of a developer-oriented compilation process.\n\nFor a more detailed reference of full DOCA-based programs that make use of multiple DOCA libraries, please refer to the Reference Applications.\n\nThe following sections present an overview of possible GPU packet processing pipeline application layouts combining DOCA GPUNetIO building blocks.",
+            "tool_info": null,
+            "span_inputs": null,
+            "span_outputs": null,
+            "provided_metadata": null
+          },
+          "data": {
+            "input": "{'query': 'LangSmith framework-specific LLM application'}",
+            "output": "Applications\n\nApplications are a higher-level reference code than the samples and demonstrate how a full DOCA-based program can be built. In addition to the supplied source code and compilation definitions, the applications are also shipped in their compiled binary form. This is to allow users an out-of-the-box interaction with DOCA-based programs without the hassle of a developer-oriented compilation process.\n\nFor a more detailed reference of full DOCA-based programs that make use of multiple DOCA libraries, please refer to the Reference Applications.\n\nThe following sections present an overview of possible GPU packet processing pipeline application layouts combining DOCA GPUNetIO building blocks.",
+            "chunk": null
+          },
+          "usage_info": {
+            "token_usage": {
+              "prompt_tokens": 0,
+              "completion_tokens": 0,
+              "total_tokens": 0
+            },
+            "num_llm_calls": 0,
+            "seconds_between_calls": 0
+          },
+          "UUID": "e1071fbc-f305-4c2b-a9fe-3b8ed12eaf6b"
+        }
+      },
+      {
+        "function_ancestry": {
+          "function_id": "1b9fbb8d-6c44-47be-b7a0-16b4b46a199b",
+          "function_name": "react_agent",
+          "parent_id": "d2e98df2-b996-4324-ba78-e51c1f12b5f1",
+          "parent_name": "root"
+        },
+        "payload": {
+          "event_type": "LLM_END",
+          "event_timestamp": 1747566909.9271307,
+          "span_event_timestamp": 1747566909.3397205,
+          "framework": "langchain",
+          "name": "meta/llama-3.1-70b-instruct",
+          "tags": null,
+          "metadata": {
+            "chat_responses": [
+              {
+                "text": "",
+                "generation_info": null,
+                "type": "ChatGenerationChunk",
+                "message": {
+                  "content": "",
+                  "additional_kwargs": {},
+                  "response_metadata": {
+                    "finish_reason": "stop",
+                    "model_name": "meta/llama-3.1-70b-instruct"
+                  },
+                  "type": "AIMessageChunk",
+                  "name": null,
+                  "id": "run--d2e98df2-b996-4324-ba78-e51c1f12b5f1"
+                }
+              }
+            ],
+            "chat_inputs": null,
+            "tool_inputs": null,
+            "tool_outputs": null,
+            "tool_info": null,
+            "span_inputs": null,
+            "span_outputs": null,
+            "provided_metadata": null
+          },
+          "data": {
+            "input": "Applications\n\nApplications are a higher-level reference code than the samples and demonstrate how a full DOCA-based program can be built. In addition to the supplied source code and compilation definitions, the applications are also shipped in their compiled binary form. This is to allow users an out-of-the-box interaction with DOCA-based programs without the hassle of a developer-oriented compilation process.\n\nFor a more detailed reference of full DOCA-based programs that make use of multiple DOCA libraries, please refer to the Reference Applications.\n\nThe following sections present an overview of possible GPU packet processing pipeline application layouts combining DOCA GPUNetIO building blocks.",
+            "output": "",
+            "chunk": null
+          },
+          "usage_info": {
+            "token_usage": {
+              "prompt_tokens": 2148,
+              "completion_tokens": 6,
+              "total_tokens": 2154
+            },
+            "num_llm_calls": 0,
+            "seconds_between_calls": 0
+          },
+          "UUID": "d2e98df2-b996-4324-ba78-e51c1f12b5f1"
+        }
+      }
+    ],
+    "expected_intermediate_steps": []
+  }
+]
